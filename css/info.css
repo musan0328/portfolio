@@ -1,0 +1,1013 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+	margin-top: -20px;
+}
+
+body {
+	/*	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;*/
+	padding: 0;
+	background-color: #FFFFFF;
+	color: #3c3c3c;
+	font-size: 15px;
+	font-feature-settings: "palt";
+	line-height: 2;
+	margin: 0 auto;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+}
+
+img {
+	vertical-align: bottom;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#info {
+	height: 600px;
+	background-image: url("../images/info/ogasuta458A7873_TP_V.jpg");
+	margin: 0 auto;
+	background-position: center bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+	position: relative;
+	z-index: 2;
+}
+
+.main_visual {
+	background-color: #F2D6AA;
+}
+
+#top-head {
+	top: -70px;
+	position: absolute;
+	width: 100%;
+	margin: 100px auto 0;
+	padding: 30px 0 0;
+	line-height: 1;
+	z-index: 999;
+}
+
+#top-head a, #top-head {
+	color: #8B4513;
+	text-shadow: 1px 1px 3px #EEEEEE;
+	text-decoration: none;
+	font-family: "Comic Sans MS";
+}
+
+#top-head .inner {
+	position: relative;
+}
+
+#top-head .logo {
+	float: left;
+	font-size: 36px;
+	color: #000000;
+	padding-left: 5vw;
+}
+
+/* Fixed */
+#top-head.fixed {
+	margin-top: 0;
+	top: 0;
+	position: fixed;
+	height: 7vw;
+	background: #fff;
+	color: #000;
+	background-color: rgba(255, 255, 255, 0.8);
+	transition: top 0.65s ease-in;
+	-webkit-transition: top 0.65s ease-in;
+	-moz-transition: top 0.65s ease-in;
+}
+
+#top-head.fixed .logo {
+	font-size: 24px;
+	color: #333;
+	margin-top: 10px;
+}
+
+#top-head.fixed #global-nav ul li a {
+	color: #333;
+	padding: 0 20px;
+}
+
+#nav-toggle {
+	display: none;
+	position: absolute;
+	right: 12px;
+	top: 21px;
+	width: 50px;
+	height: 36px;
+	cursor: pointer;
+	z-index: 999;
+}
+
+#nav-toggle div {
+	position: relative;
+}
+
+#nav-toggle span {
+	display: block;
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	background: #8B4513;
+	left: 0;
+	-webkit-transition: .35s ease-in-out;
+	-moz-transition: .35s ease-in-out;
+	transition: .35s ease-in-out;
+}
+
+#nav-toggle span:nth-child(1) {
+	top: 0;
+}
+
+#nav-toggle span:nth-child(2) {
+	top: 11px;
+}
+
+#nav-toggle span:nth-child(3) {
+	top: 22px;
+}
+
+/*ハンバーガーメニューここまで*/
+
+
+/*ロゴ*/
+.logo-dc {
+	width: 16vw;
+	position: absolute;
+	top: -2vw;
+}
+
+.gloval-nav2 {
+	position: absolute;
+	top: 10%;
+	left: 34%;
+	z-index: 2;
+}
+
+.gloval-nav2 li {
+	float: left;
+	margin: 0 20px;
+	list-style: none;
+	/* font-family: "ＭＳ ゴシック",sans-serif; */
+	font-family: sans-serif;
+}
+
+.gloval-nav2 li a {
+	color: #ffffff;
+	text-shadow: -1px -2px 3px #808080;
+	font-size: 1.6rem;
+}
+
+.gloval-nav2 li a:hover {
+	padding-bottom: 3px;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+.main {
+	background-color: #FFFFFF;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+.content {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.info-title {
+	font-size: min(0.9rem, 3.5vw);
+	font-family: 'Kosugi Maru', sans-serif;
+}
+
+.title-info {
+	padding: 100px 0;
+	background-color: #FFFFFF;
+}
+
+.title {
+	text-align: center;
+	font-size: 40px;
+	font-family: Chalkduster;
+	color: #FF9900;
+	display: block;
+}
+
+/*inview.js動き*/
+.price-area {
+	opacity: 0;
+	transform: translateX(-100px);
+}
+
+.fadeInRight {
+	transition: all 2.5s ease-in-out;
+	transform: translateX(0.1px);
+	opacity: 1 !important;
+}
+
+.price-area {
+	background-color: #FFEFD5;
+}
+
+.price-info {
+	padding: 100px 0;
+}
+
+.price-info2 {
+	padding-bottom: 80px;
+}
+
+.price {
+	max-width: 540px;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.price dt {
+	display: inline-block;
+	width: 28%;
+	vertical-align: top;
+}
+
+.price dd {
+	display: inline-block;
+	width: 70%;
+	padding-bottom: 30px;
+}
+
+.info-title {
+	letter-spacing: 5px;
+	width: 28%;
+}
+
+.info-title:first-child {
+	padding-top: 0;
+}
+
+.info-detail {
+	font-family: 'Kosugi Maru', sans-serif;
+	letter-spacing: 5px;
+}
+
+.yohaku {
+	padding: 60px;
+	background-color: #FFFFFF;
+}
+
+/*Cautionエリア*/
+/*inview.js動き*/
+.caution-area {
+	opacity: 0;
+	transform: translateX(-100px);
+}
+
+.fadeInRight {
+	transition: all 2.5s ease-in-out;
+	transform: translateX(0.1px);
+	opacity: 1 !important;
+}
+
+.caution-area {
+	background-color: #FFEFD5;
+}
+
+.caution-info {
+	max-width: 550px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+
+.caution-text {
+	text-align: left;
+	padding-top: 50px;
+	letter-spacing: 3px;
+	font-family: 'Kosugi Maru', sans-serif;
+}
+
+.dog-img {
+	width: 11vw;
+}
+
+.dog-img, .hukidashi {
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-duration: 1.5s;
+}
+
+.keyframe {
+	animation-name: anim_h;
+}
+
+@keyframes anim_h {
+	0% {
+		transform: translate(0px, 0);
+	}
+
+	100% {
+		transform: translate(30px, 0);
+	}
+}
+
+.icon {
+	position: relative;
+}
+
+.huki-icon {
+	position: absolute;
+	bottom: 2vw;
+	right: -3vw;
+}
+
+.hukidashi {
+	width: 12vw;
+}
+
+.dog-icon {
+	position: absolute;
+	right: -6vw;
+	bottom: -6vw;
+}
+
+/*Q&Aエリア*/
+/*inview.js動き*/
+.qa-info {
+	opacity: 0;
+	transform: translateX(-100px);
+}
+
+.fadeInRight {
+	transition: all 2.5s ease-in-out;
+	transform: translateX(0.1px);
+	opacity: 1 !important;
+}
+
+.qa-info {
+	max-width: 700px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 100px 0;
+	background-color: #FFFFFF;
+}
+
+.qa-info__title {
+	font-family: Chalkduster;
+	color: #FF9900;
+	font-size: 33px;
+	padding-bottom: 50px;
+}
+
+.qa-text {
+	text-align: left;
+	max-width: 890px;
+	font-family: 'Kosugi Maru', sans-serif;
+	margin: 0 auto;
+}
+
+.q-title {
+	font-family: Chalkduster;
+	color: #FF9900;
+	font-size: 29px;
+	display: inline-block;
+	width: 10%;
+	vertical-align: sub;
+	margin-bottom: 20px;
+}
+
+.a-title {
+	font-family: Chalkduster;
+	color: #FF9900;
+	font-size: 33px;
+	display: inline-block;
+	width: 10%;
+	margin-bottom: 20px;
+}
+
+.qa-area1 {
+	margin-bottom: 20px;
+}
+
+.qa-area1 p {
+	display: inline-block;
+	width: 80%;
+	vertical-align: middle;
+}
+
+.oya-chouhokei {
+	max-width: 830px;
+	margin-left: auto;
+}
+
+.qa-detail {
+	text-align: left;
+	padding-top: 50px;
+}
+
+.qa-detail {
+	padding-top: 50px;
+}
+
+.chouhoukei {
+	width: 96%;
+	height: 0.7vw;
+}
+
+/*アクセスエリア*/
+.access-area {
+	font-family: 'Kosugi Maru', sans-serif;
+}
+
+/*inview.js動き*/
+.access-info {
+	opacity: 0;
+	transform: translateX(-100px);
+}
+
+.fadeInRight {
+	transition: all 2.5s ease-in-out;
+	transform: translateX(0.1px);
+	opacity: 1 !important;
+}
+
+.access-info {
+	background-color: #FFEFD5;
+	padding-bottom: 100px;
+}
+
+.access-title {
+	padding: 100px 0 50px 0;
+}
+
+.access {
+	max-width: 695px;
+	margin: 0 auto;
+}
+
+.access-area {
+	max-width: 650px;
+	width: 100%;
+	margin: 0 auto;
+	letter-spacing: 1.4px;
+}
+
+.access-area th {
+	display: inline-block;
+	text-align: left;
+	padding-right: 25px;
+}
+
+.access-area td {
+	display: inline-block;
+	letter-spacing: 3px;
+}
+
+.yoru {
+	padding-left: 30px;
+}
+
+.doyo {
+	padding: 0px 0 30px 100px
+}
+
+.maishu {
+	padding-left: 16px;
+}
+
+.jyusho {
+	padding-left: 32px;
+}
+
+/*google mapエリア*/
+.google-map {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+.google-map iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.logo-in:hover {
+	transform: scale(1.3);
+	transition-duration: 1.0s;
+}
+
+.logo-fb:hover {
+	transform: scale(1.3);
+	transition-duration: 1.0s;
+}
+
+/*ページトップボタン*/
+.topBtn {
+	position: relative;
+	position: fixed;
+	bottom: 20px;
+	right: 0px;
+	display: block;
+	background-color: #F6B37F;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 11px;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	line-height: 18px;
+	border-radius: 50px;
+	padding: 0.5rem 1rem;
+	box-sizing: border-box;
+	-webkit-transition-property: opacity;
+	transition-duration: .5s;
+	-webkit-transition-duration: .5s;
+	z-index: 1;
+}
+
+.topBtn a {
+	text-decoration: none;
+}
+
+.topBtn:before {
+	content: '\02227';
+	position: absolute;
+	top: 42px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	color: #FFFFFF;
+}
+
+.topBtn-text {
+	position: absolute;
+	bottom: 26px;
+	right: 5px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.topBtn:hover {
+	opacity: 0.5;
+}
+
+/*footerエリア*/
+footer {
+	text-align: center;
+	padding: 50px 0 20px 0;
+	background-color: #FFFFFF
+}
+
+footer .logo-in, .logo-fb {
+	margin: 20px 0;
+	width: 40px;
+	height: 40px;
+	padding: 40px 10px;
+}
+
+footer .copyright {
+	color: #000000;
+	font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+
+	/*ロゴ*/
+	.logo-dc {
+		top: 1.3vw;
+		left: 3vw;
+		width: 23vw;
+		height: 15vw;
+	}
+
+	/*ハンバーガーメニュー 他の下層ページ共通*/
+	#nav-toggle {
+		display: block;
+	}
+
+	#top-head, .inner {
+		width: 100%;
+		padding: 0;
+	}
+
+	#top-head {
+		top: 0;
+		position: fixed;
+		margin-top: 0;
+	}
+
+	#top-head a, #top-head {
+		text-shadow: none;
+	}
+
+	#mobile-head {
+		background: rgba(255, 255, 255, 0.2);
+		width: 100%;
+		height: 22vw;
+		position: relative;
+	}
+
+	#top-head.fixed .logo,
+	#top-head .logo {
+		color: #333;
+		font-size: 26px;
+	}
+
+	#gloval-nav {
+		position: absolute;
+		top: -556px;
+		background: rgba(255, 255, 255, 0.8);
+		width: 100%;
+		text-align: center;
+		padding: 50px 0;
+		-webkit-transition: .5s ease-in-out;
+		-moz-transition: .5s ease-in-out;
+		transition: .5s ease-in-out;
+	}
+
+	#gloval-nav ul {
+		width: 100%;
+		list-style: none;
+		position: static;
+		right: 0;
+		bottom: 0;
+		font-size: 14px;
+	}
+
+	#gloval-nav ul li {
+		float: none;
+		position: static;
+	}
+
+	#top-head #gloval-nav ul li a,
+	#top-head.fixed #gloval-nav ul li a {
+		color: #8B4513;
+		text-shadow: 1px 1px 3px #EEEEEE;
+		text-decoration: none;
+		font-family: "Comic Sans MS";
+		display: block;
+		padding: 18px 0;
+	}
+
+
+	/* #nav-toggle 切り替えアニメーション */
+	.open #nav-toggle span:nth-child(1) {
+		top: 11px;
+		-webkit-transform: rotate(315deg);
+		-moz-transform: rotate(315deg);
+		transform: rotate(315deg);
+	}
+
+	.open #nav-toggle span:nth-child(2) {
+		width: 0;
+		left: 50%;
+	}
+
+	.open #nav-toggle span:nth-child(3) {
+		top: 11px;
+		-webkit-transform: rotate(-315deg);
+		-moz-transform: rotate(-315deg);
+		transform: rotate(-315deg);
+	}
+
+	/* #global-nav スライドアニメーション */
+	.open #gloval-nav {
+		/* #global-nav top + #mobile-head height */
+		-moz-transform: translateY(556px);
+		-webkit-transform: translateY(556px);
+		transform: translateY(556px);
+	}
+
+
+	/*	ここまで(ハンバーガーメニューの実装)*/
+
+	.price-area {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+
+	.price {
+		max-width: 640px;
+		width: 54%;
+		margin: 0 auto;
+	}
+
+	.price dt {
+		display: inline-block;
+		width: 60%;
+		vertical-align: top;
+	}
+
+	.price dd {
+		display: inline-block;
+		width: 100%;
+		padding-bottom: 30px;
+	}
+
+
+	.info-title {
+		display: block;
+	}
+
+	.caution-area {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+
+	.caution-area {
+		height: 810px;
+	}
+
+	.caution-text {
+		max-width: 450px;
+		width: 90%;
+		margin: 0 auto;
+		font-size: min(1.1rem, 3.3vw);
+	}
+
+	.topBtn-outer {
+		position: relative;
+	}
+
+	.topBtn {
+		position: absolute;
+		top: -5px;
+	}
+
+	.fadeInRight {
+		transform: translate(0);
+	}
+
+
+	.icon {
+		position: relative;
+	}
+
+	.hukidashi {
+		width: 15vw;
+	}
+
+	.icon {
+		position: relative;
+	}
+
+	.huki-icon {
+		position: absolute;
+		top: -9vw;
+		right: 11vw
+	}
+
+	.dog-icon {
+		position: absolute;
+		top: 4vw;
+		right: 9vw;
+	}
+
+	.dog-img {
+		width: 13vw;
+		height: auto;
+	}
+
+	.dog-img:hover {
+		-moz-transform: rotate(0deg) scale(1.0) translate(0px, 0px);
+		-webkit-transform: rotate(0deg) scale(1.0) translate(0px, 0px);
+		-o-transform: rotate(0deg) scale(1.0) translate(0px, 0px);
+		-ms-transform: rotate(0deg) scale(1.0) translate(0px, 0px);
+		transform: rotate(0deg) scale(1.0) translate(0px, 0px);
+	}
+
+	.hukidashi:hover {
+		-moz-transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+		-o-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+
+	.qa-info {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+
+	.qa-text {
+		width: 90%;
+	}
+
+	.q-title {}
+
+	.a-title {
+		vertical-align: text-bottom;
+	}
+
+	.access-info {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+
+	.access-area {
+		max-width: 600px;
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+
+@media screen and (min-width: 541px) and (max-width: 601px) {
+	.yoru {
+		padding-left: 22.5vw;
+	}
+}
+
+@media screen and (min-width: 376px) and (max-width: 540px) {
+
+	/*		画面サイズ540pxから376px指定*/
+	.yoru {
+		padding-left: 134px;
+	}
+
+	.doyo {
+		padding: 0px 0 30px 99px;
+	}
+}
+
+@media screen and (min-width: 376px) and (max-width: 493px) {
+	.access-area th {
+		/*		padding-right: 10px;*/
+	}
+}
+
+@media screen and (max-width: 375px) {
+
+	/* ナビゲーションメニュー */
+	#mobile-head {
+		height: 33vw;
+		position: relative;
+	}
+
+	.logo-dc {
+		top: 5vw;
+		left: 5vw;
+		width: 35vw;
+		height: 23vw;
+	}
+
+	.price {
+		max-width: 267px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.price dt {
+		font-size: 1.0rem;
+	}
+
+	.price dd {
+		font-size: 1.0rem;
+	}
+
+	.info-title {
+		font-size: 0.8rem;
+		font-family: 'Kosugi Maru', sans-serif;
+
+	}
+
+	.info-detail {
+		font-size: 0.8rem;
+		font-family: 'Kosugi Maru', sans-serif;
+
+	}
+
+	.caution-info {
+		height: 100vw;
+		;
+	}
+
+	.caution-text {
+		max-width: 300px;
+		width: 83%;
+		margin: 0 auto;
+		font-size: 0.8rem;
+	}
+
+	.icon {
+		position: relative;
+	}
+
+	.huki-icon {
+		position: absolute;
+		top: -1vw;
+		left: 56vw;
+	}
+
+	.hukidashi {
+		width: 30vw;
+	}
+
+	.dog-icon {
+		position: absolute;
+		top: 25vw;
+		right: 10vw;
+	}
+
+	.dog-img {
+		width: 29vw;
+		height: auto;
+	}
+
+	.q-title {
+		font-size: 1.8rem;
+		vertical-align: top;
+	}
+
+	.question {
+		font-size: 1.0rem;
+		padding-left: 15px;
+		padding-bottom: 35px;
+	}
+
+
+	.a-title {
+		font-size: 1.8rem;
+		vertical-align: top;
+	}
+
+	.anser {
+		font-size: 1.0rem;
+		padding-left: 15px;
+	}
+
+	.access-area {
+		max-width: 250px;
+		margin: 0 auto;
+		letter-spacing: 1.4px;
+	}
+
+	.access-area th {
+		font-size: 1.1rem;
+		padding-right: 15px;
+	}
+
+	.access-area td {
+		font-size: 1.0rem;
+		font-family: 'Kosugi Maru', sans-serif;
+	}
+
+	.yoru {
+		padding-left: 36px;
+	}
+
+	.doyo {
+		padding: 0 0 30px 0;
+	}
+
+	.maishu {
+		font-size: 0.7rem;
+		padding: 0 0 30px 0;
+	}
+
+	.jyusho {
+		padding: 0 0 30px 0;
+	}
+
+	.train {
+		padding: 0 0 30px 0;
+	}
+
+
+	/*	Topボタン*/
+	.topBtn-outer {
+		position: relative;
+	}
+
+	.topBtn {
+		position: absolute;
+		top: -10px;
+	}
+}

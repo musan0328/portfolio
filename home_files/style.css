@@ -1,0 +1,504 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*ページの余白を0に設定する*/
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #FFFFFF;
+	color: #000000;
+	font-size: 15px;
+	line-height: 2;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+/*ブラウザと規定のスタイルを解除する*/
+p,h1,h2,h3,h4,h5,h6 {
+	margin-top: 0;
+}
+
+/*画像の下部の余白をなくす*/
+img {
+	vertical-align: bottom;
+	width:100%;
+	max-width: 100%;
+	height: auto;
+}
+
+/*リスト項目の余白をなくす*/
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+/*	訪問前のリンク*/
+	color: #FFFFFF;
+/*	下線なしの設定*/
+	text-decoration: none;
+}
+
+a:visited {
+/*	訪問後のリンク*/
+/*	color: #788d98;*/
+}
+
+a:hover {
+/*	マウスポインたを置いた時*/
+	text-decoration: underline;
+}
+
+/*ヘッダーエリアのスタイルを指定する*/
+#home {
+/*	ヘッダーエリアの幅と高さを指定*/
+/*	max-width: 1080px;*/
+	width: 100%;
+	height: 840px;
+	background-image: url("../素材/Home画面/home画面-メインビジュアル/pixta_54961259_M.jpg");
+/*	左右中央よせ*/
+	margin: 0 auto;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/*共通部分*/
+.main_visual {
+	background-color: #F2D6AA;
+}
+
+/*ナビゲーションバーの位置を指定する*/
+.gloval-nav {
+	float: right;
+/*	上部に余白を設定*/
+	margin-top: 90px;
+}
+
+.gloval-nav2 {
+	float: right;
+/*	上部に余白を設定*/
+	margin-top: 90px;
+	margin-right: 260px;
+}
+
+.gloval-nav li {
+/*	メニュー項目を横に並べる ul要素の子要素 li要素に対して floatプロパティで左揃えを指定する*/
+	float: left;
+/*	余白を調整 上下0  左右20px*/
+	margin: 0 20px;
+	font-size: 20px;
+	list-style: none;
+	font-family: "ＭＳ ゴシック",sans-serif;
+}
+
+.gloval-nav2 li {
+/*	メニュー項目を横に並べる ul要素の子要素 li要素に対して floatプロパティで左揃えを指定する*/
+	float: left;
+/*	余白を調整 上下0  左右20px*/
+	margin: 0 20px;
+	font-size: 20px;
+	list-style: none;
+	font-family: "ＭＳ ゴシック",sans-serif;
+}
+
+.gloval-nav li a {
+/*	メニュー文字の色を変更*/
+	color: #000000;
+}
+
+.gloval-nav2 li a {
+/*	メニュー文字の色を変更*/
+	color: #FFFFFF;
+}
+
+.gloval-nav li a:hover {
+/*文字と下線の余白調整*/
+	padding-bottom: 3px;
+/*ホバーした時に下線を設定したので、 text-decoratione none  を指定*/
+	text-decoration: none;
+}
+
+.gloval-nav2 li a:hover {
+/*文字と下線の余白調整*/
+	padding-bottom: 3px;
+/*ホバーした時に下線を設定したので、 text-decoratione none  を指定*/
+	text-decoration: none;
+}
+
+#wrap {
+	background-color: #FFEFD5;
+}
+
+.content {
+/*	コンテンツエリアを中央寄せに設定*/
+	width: 100%;
+	margin: 0 auto;
+}
+
+.title {
+	text-align: center;
+	font-size: 40px;
+	font-family: Chalkduster;
+	color: #FF9900;
+	display: block;
+}
+
+.concept {
+    display: flex;
+    position: relative;
+}
+
+.title-concept {
+    background-color: #FFEFD5;
+    padding: 60px 0;
+}
+
+.concept-box {
+    flex: 1;
+    padding: 3% 0 0 10%;
+    width: 50vw;
+    max-width: 500px;
+    height: 50vw;
+    max-height: 500px;
+}
+
+.concept-img {
+    float: left;
+    border-radius: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.concept-ato {
+    position: absolute;
+    left: 7%;
+    bottom: 1%;
+}
+
+.home-dog-ato {
+    width: 130px;
+    height: 130px;
+}
+
+.concept-text {
+    width: 50%;
+    max-width: 540px;
+    float: right;
+    padding: 30px;
+    line-height: 2.5;
+    box-sizing: border-box;
+    letter-spacing: 0.2em;
+}
+
+.concept-text p {
+    width: 80%;
+}
+
+.title-dogs {
+    padding-top: 100px;
+}
+
+.dogs {
+    max-width: 842px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.dogs-area {
+    display: flex;
+    height: 390px;
+}
+
+.dogs-text {
+    flex: 1;
+}
+
+.dogs-text p {
+    font-size: 16px;
+    line-height: 2em;
+    letter-spacing: 0.3em;
+    margin-top: 100px;
+}
+
+.dogs-area-img {
+    flex: 1;
+    position: relative;
+}
+
+.hukidashi {
+    position: absolute;
+    width: 32%;
+    max-width: 130px;
+    z-index: 2;
+    left: 11%;
+}
+
+.dogs-img {
+    position: absolute;
+    width: 100%;
+    max-width: 380px;
+    z-index: 1;
+    top: 45px;
+    left: 10%;
+}
+
+.dogs-link {
+    text-decoration: none;
+    position: absolute;
+    bottom: 35%;
+    left: 20%;
+}
+
+.dogs-link_image {
+    max-width: 300px;
+}
+
+.dog-ato3 {
+    width: 130px;
+    height: 130px;
+}
+
+/*インテリアエリア*/
+.interior {
+    background-image: url(../素材/Home画面/インテリア/ogasuta458A7816_TP_V.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+.interior-box {
+    max-width: 900px;
+    height: 740px;
+    position: relative;
+}
+
+.interior-box-title {
+    width: 220px;
+    height: 215px;
+    position: absolute;
+    top: 20%;
+    left: 14%;
+}
+
+.interior-box-text {
+    width: 317px;
+    height: 280px;
+    position: absolute;
+    top: 6%;
+    left: 57%;
+}
+
+.interior-box-text2 {
+    width: 300px;
+    height: 266px;
+    position: absolute;
+    top: 51%;
+    left: 35%;
+}
+
+.yohaku {
+    background-color: #FFFFFF;
+    width: inherit;
+}
+
+/*ニュースエリア*/
+.title-news {
+    background-color: #FFEFD5;
+    padding: 60px;
+}
+
+.home-news {
+    text-align: center;
+    background-color: #FFEFD5;
+    height: 380px;
+}
+
+.news {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+
+.home-news-img {
+    border-radius: 10%;
+    max-width: 200px;
+    width: 100%;
+    height: 17vh;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home-dog-ato2 {
+    position: relative;
+}
+
+.dog-ato2 {
+    position: absolute;
+    left: 30px;
+    /* bottom: 20px; */
+    width: 130px;
+    height: 130px;
+}
+
+.home-kiji-btn {
+    position: relative;
+}
+
+.home-kiji-btn a {
+    text-decoration: none;
+}
+
+/*ギャラリーページ*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.title-galleries {
+    padding: 60px 0;
+}
+
+.gallerie {
+    max-width: 880px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.galleries {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.galleries li {
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+.galleries-img {
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+    filter: brightness(110%);
+}
+
+
+
+/*google mapエリア*/
+.google-map {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+.google-map iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+/*ページトップボタン*/
+.topBtn {
+  position: relative;
+  position: fixed; /*固定*/
+  bottom: 20px; /*場所を右下に移動*/
+  right: 20px; /*場所を右下に移動*/
+  display: block; /*aタグをblock要素に変更*/
+  background-color: #F6B37F;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50px;
+/*  padding-top: 30px;*/
+　padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  -webkit-transition-property: opacity;
+  transition-duration: .5s;
+  -webkit-transition-duration: .5s;
+}
+
+.topBtn a {
+	text-decoration: none;
+}
+
+.topBtn:before {
+  content:'\02227';
+  position: absolute;
+  top: 42px;
+  left: 0;
+  width:100%;
+  text-align:center;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+.topBtn-text {
+	position: absolute;
+	bottom: 26px;
+	right: 5px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.topBtn:hover {
+	opacity: 0.5;
+}
+
+/*footerエリア*/
+footer {
+    text-align: center;
+    padding: 100px 0 20px 0;
+    background-color: #FFFFFF
+}
+
+footer .logo {
+	margin: 20px 0;
+    width: 40px;
+    height: 40px;
+    padding: 40px 10px;
+}
+
+footer .copyright {
+	color: #000000;
+	font-size: 18px;
+}

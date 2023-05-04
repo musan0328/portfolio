@@ -1,0 +1,14 @@
+
+.accordion li {
+  list-style: none;
+  position: absolute;
+  overflow: hidden;
+}
+
+.accordion {
+  max-width: 700px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}

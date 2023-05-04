@@ -1,0 +1,1117 @@
+@charset "UTF-8";
+
+/* CSS Document */
+/*ページの余白を0に設定する*/
+html {
+	margin-top: -20px;
+}
+
+body {
+	/*	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;*/
+	padding: 0;
+	background-color: #FFFFFF;
+	color: #3c3c3c;
+	font-size: 15px;
+	font-feature-settings: "palt";
+	/*	letter-spacing: 0.1em;*/
+	line-height: 2;
+	/*	max-width: 1080px;*/
+	margin: 0 auto;
+}
+
+/*ブラウザと規定のスタイルを解除する*/
+p, h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+}
+
+/*画像の下部の余白をなくす*/
+img {
+	vertical-align: bottom;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+/*リスト項目の余白をなくす*/
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	/*	訪問前のリンク*/
+	color: #FFFFFF;
+	/*	下線なしの設定*/
+	text-decoration: none;
+}
+
+a:visited {
+	/*	訪問後のリンク*/
+	/*	color: #788d98;*/
+}
+
+a:hover {
+	/*	マウスポインたを置いた時*/
+	text-decoration: underline;
+}
+
+#menu {
+	/*	ヘッダーエリアの幅と高さを指定*/
+	height: 600px;
+	background-image: url("../images/menu/drink/nathan-dumlao-KixfBEdyp64-unsplash.jpg");
+	/*	左右中央よせ*/
+	margin: 0 auto;
+	background-position: center bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+	position: relative;
+	z-index: 2;
+}
+
+/*共通部分*/
+.main_visual {
+	background-color: #F2D6AA;
+}
+
+/*ナビゲーションメニュー*/
+#top-head {
+	top: -70px;
+	position: absolute;
+	width: 100%;
+	margin: 100px auto 0;
+	padding: 30px 0 0;
+	line-height: 1;
+	z-index: 999;
+}
+
+#top-head a, #top-head {
+	color: #8B4513;
+	text-shadow: 1px 1px 3px #EEEEEE;
+	text-decoration: none;
+	font-family: "Comic Sans MS";
+}
+
+#top-head .inner {
+	position: relative;
+}
+
+#top-head .logo {
+	float: left;
+	font-size: 36px;
+	color: #000000;
+	padding-left: 5vw;
+}
+
+/* Fixed */
+#top-head.fixed {
+	margin-top: 0;
+	top: 0;
+	position: fixed;
+	height: 7vw;
+	background: #fff;
+	color: #000;
+	background-color: rgba(255, 255, 255, 0.8);
+	transition: top 0.65s ease-in;
+	-webkit-transition: top 0.65s ease-in;
+	-moz-transition: top 0.65s ease-in;
+}
+
+#top-head.fixed .logo {
+	font-size: 24px;
+	color: #333;
+	margin-top: 10px;
+}
+
+#top-head.fixed #global-nav ul li a {
+	color: #333;
+	padding: 0 20px;
+}
+
+
+/* Toggle Button */
+#nav-toggle {
+	display: none;
+	position: absolute;
+	right: 12px;
+	top: 21px;
+	width: 50px;
+	height: 36px;
+	cursor: pointer;
+	z-index: 999;
+}
+
+#nav-toggle div {
+	position: relative;
+}
+
+#nav-toggle span {
+	display: block;
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	background: #8B4513;
+	left: 0;
+	-webkit-transition: .35s ease-in-out;
+	-moz-transition: .35s ease-in-out;
+	transition: .35s ease-in-out;
+}
+
+
+#nav-toggle span:nth-child(1) {
+	top: 0;
+}
+
+#nav-toggle span:nth-child(2) {
+	top: 11px;
+}
+
+#nav-toggle span:nth-child(3) {
+	top: 22px;
+}
+
+/*ハンバーガーメニューここまで*/
+
+/*ロゴ*/
+.logo-dc {
+	width: 16vw;
+	position: absolute;
+	top: -2vw;
+}
+
+/*ナビゲーションバーの位置を指定する*/
+.gloval-nav {
+	float: right;
+	/*	上部に余白を設定*/
+	margin-top: 90px;
+}
+
+.gloval-nav2 {
+	position: absolute;
+	top: 10%;
+	left: 34%;
+	z-index: 2;
+}
+
+.gloval-nav2 li {
+	float: left;
+	margin: 0 20px;
+	list-style: none;
+	/* font-family: "ＭＳ ゴシック",sans-serif; */
+	font-family: sans-serif;
+}
+
+.gloval-nav2 li a {
+	font-size: 1.6rem;
+}
+
+.gloval-nav2 li a:hover {
+	/*文字と下線の余白調整*/
+	padding-bottom: 3px;
+	/*ホバーした時に下線を設定したので、 text-decoratione none  を指定*/
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+.content {
+	/*	コンテンツエリアを中央寄せに設定*/
+	width: 100%;
+	margin: 0 auto;
+}
+
+.title-area {
+	background-color: #FFEFD5;
+	padding: 100px 0;
+}
+
+.title {
+	display: block;
+	text-align: center;
+	font-size: 40px;
+	font-family: Chalkduster;
+	color: #FF9900;
+	padding-bottom: 50px;
+}
+
+/*menu画面 Drink*/
+.menu1 {
+	max-width: 880px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+
+.drink-area {
+	background-color: #FFFFFF;
+}
+
+.title-menu1 {
+	margin: 100px 0;
+}
+
+.menu-text {
+	text-align: left;
+	width: 75%;
+	max-width: 632px;
+	margin: 0 auto;
+	font-size: 18px;
+	letter-spacing: 0.1em;
+}
+
+.menu-text p {
+	font-family: 'Kosugi Maru', sans-serif;
+}
+
+.title-drink {
+	display: block;
+	text-align: center;
+	font-size: 40px;
+	font-family: Chalkduster;
+	color: #FF9900;
+}
+
+.main-drink_flex {
+	display: flex;
+	margin-bottom: 90px;
+}
+
+.drink1 {
+	flex: 1;
+}
+
+.drink2 {
+	flex: 1;
+	text-align: right
+}
+
+.cofee {
+	width: 95%;
+	max-width: 400px;
+	height: 43vw;
+	max-height: 380px;
+	border-radius: 10%;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+.cofee:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+.caferate {
+	width: 95%;
+	max-width: 400px;
+	height: 43vw;
+	max-height: 380px;
+	border-radius: 10%;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+.caferate:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+.macha {
+	width: 95%;
+	max-width: 400px;
+	height: 43vw;
+	max-height: 380px;
+	border-radius: 10%;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+.macha:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+.drink1 p {
+	width: 95%;
+	max-width: 400px;
+	text-align: center;
+	font-family: YuGothic, 'Yu Gothic', sans-serif;
+	font-size: 1.0rem;
+	color: #3c3c3c;
+}
+
+.drink2 p {
+	width: 95%;
+	max-width: 400px;
+	text-align: center;
+	margin-left: auto;
+	font-family: YuGothic, 'Yu Gothic', sans-serif;
+	font-size: 1.0rem;
+	color: #3c3c3c;
+}
+
+.sub-drink {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.sub-drink_menu {
+	width: 30%;
+	max-width: 260px;
+	margin-bottom: 90px;
+}
+
+.sub-drink_menu img {
+	width: 100%;
+	height: 263px;
+	border-radius: 10%;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+.sub-drink_menu p {
+	text-align: center;
+	font-family: YuGothic, 'Yu Gothic', sans-serif;
+	font-size: 1.0rem;
+	color: #3c3c3c;
+}
+
+.floot {
+	width: 30%;
+	height: 263px;
+	border-radius: 10%;
+	object-fit: cover;
+}
+
+.floot:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+.koucha {
+	width: 30%;
+	height: 263px;
+	border-radius: 10%;
+	object-fit: cover;
+}
+
+.koucha:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+.greepfruit {
+	width: 30%;
+	height: 263px;
+	border-radius: 10%;
+	object-fit: cover;
+}
+
+.greepfruit:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+.orenge {
+	width: 30%;
+	height: 263px;
+	border-radius: 10%;
+	object-fit: cover;
+}
+
+.orenge:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+.apple {
+	width: 30%;
+	height: 263px;
+	border-radius: 10%;
+	object-fit: cover;
+}
+
+.apple:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+.greep {
+	width: 30%;
+	height: 263px;
+	border-radius: 10%;
+	object-fit: cover;
+}
+
+.greep:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+.uulon {
+	width: 30%;
+	height: 263px;
+	border-radius: 10%;
+	object-fit: cover;
+}
+
+.uulon:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+.cookie {
+	width: 55%;
+	height: 263px;
+	border-radius: 10%;
+	object-fit: cover;
+}
+
+.cookie:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+
+/*Foodエリア*/
+.menu2 {
+	/*	max-width: 880px;*/
+	/*	max-width: 1080px;*/
+	margin: 0 auto;
+	background-color: #FFEFD5;
+}
+
+.food-area {
+	background-color: #FFEFD5;
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+.title-menu2 {
+	padding: 100px 0;
+}
+
+.title-food {
+	display: block;
+	text-align: center;
+	font-size: 40px;
+	font-family: Chalkduster;
+	color: #FF9900;
+	margin-bottom: 40px;
+}
+
+.food-text {
+	letter-spacing: 4px;
+	font-size: 20px;
+	max-width: 615px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.food-text {
+	font-family: 'Kosugi Maru', sans-serif;
+}
+
+.main-food_flex {
+	display: flex;
+	margin-bottom: 90px;
+}
+
+.food1 {
+	flex: 1;
+}
+
+.food2 {
+	flex: 1;
+	text-align: right;
+}
+
+.food1 p {
+	width: 95%;
+	max-width: 400px;
+	text-align: center;
+	font-family: YuGothic, 'Yu Gothic', sans-serif;
+	font-size: 1.0rem;
+	color: #3c3c3c;
+}
+
+.food2 p {
+	width: 95%;
+	max-width: 400px;
+	text-align: center;
+	margin-left: auto;
+	font-family: YuGothic, 'Yu Gothic', sans-serif;
+	font-size: 1.0rem;
+	color: #3c3c3c;
+}
+
+.sarada1 {
+	width: 95%;
+	max-width: 400px;
+	height: 43vw;
+	max-height: 380px;
+	border-radius: 10%;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+.sarada1:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+.sandwich {
+	width: 95%;
+	max-width: 400px;
+	height: 43vw;
+	max-height: 380px;
+	border-radius: 10%;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+.sandwich:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+.sub-food {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.sub-food_menu {
+	width: 30%;
+	max-width: 260px;
+	margin-bottom: 90px;
+}
+
+.sub-food_menu img {
+	width: 100%;
+	height: 24vw;
+	max-height: 263px;
+	border-radius: 10%;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+.sub-food_menu p {
+	text-align: center;
+	font-family: YuGothic, 'Yu Gothic', sans-serif;
+	font-size: 1.0rem;
+	color: #3c3c3c;
+}
+
+.sarada2 {
+	width: 30%;
+	height: 263px;
+	border-radius: 10%;
+	object-fit: cover;
+}
+
+.sarada2:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+.sarada3 {
+	width: 30%;
+	height: 263px;
+	border-radius: 10%;
+	object-fit: cover;
+}
+
+.sarada3:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+.sarada4 {
+	width: 30%;
+	height: 263px;
+	border-radius: 10%;
+	object-fit: cover;
+}
+
+.sarada4:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+.sarada5 {
+	width: 30%;
+	height: 263px;
+	border-radius: 10%;
+	object-fit: cover;
+}
+
+.sarada5:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+.sarada6 {
+	width: 30%;
+	height: 263px;
+	border-radius: 10%;
+	object-fit: cover;
+}
+
+.sarada6:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+.sarada7 {
+	width: 30%;
+	height: 263px;
+	border-radius: 10%;
+	object-fit: cover;
+}
+
+.sarada7:hover {
+	opacity: 0.8;
+	transition-duration: 1.3s;
+}
+
+/*google mapエリア*/
+.google-map {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+.google-map iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+/*footer*/
+.logo-in:hover {
+	transform: scale(1.3);
+	transition-duration: 1.0s;
+}
+
+.logo-fb:hover {
+	transform: scale(1.3);
+	transition-duration: 1.0s;
+}
+
+
+/*ページトップボタン*/
+.topBtn {
+	position: relative;
+	position: fixed;
+	/*固定*/
+	bottom: 20px;
+	/*場所を右下に移動*/
+	right: 20px;
+	/*場所を右下に移動*/
+	display: block;
+	/*aタグをblock要素に変更*/
+	background-color: #F6B37F;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 11px;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	line-height: 18px;
+	border-radius: 50px;
+	padding: 0.5rem 1rem;
+	box-sizing: border-box;
+	-webkit-transition-property: opacity;
+	transition-duration: .5s;
+	-webkit-transition-duration: .5s;
+}
+
+.topBtn a {
+	text-decoration: none;
+}
+
+.topBtn:before {
+	content: '\02227';
+	position: absolute;
+	top: 42px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	color: #FFFFFF;
+}
+
+.topBtn-text {
+	position: absolute;
+	bottom: 26px;
+	right: 5px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.topBtn:hover {
+	opacity: 0.5;
+}
+
+/*footerエリア*/
+footer {
+	text-align: center;
+	padding: 50px 0 20px 0;
+	background-color: #FFFFFF
+}
+
+footer .logo-in {
+	margin: 20px 0;
+	width: 40px;
+	height: 40px;
+	padding: 40px 10px;
+}
+
+footer .logo-fb {
+	margin: 20px 0;
+	width: 40px;
+	height: 40px;
+	padding: 40px 10px;
+}
+
+footer .copyright {
+	color: #000000;
+	font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+
+	.logo-dc {
+		top: 1.3vw;
+		left: 3vw;
+		width: 23vw;
+		height: 15vw;
+	}
+
+	.gloval-nav2 {
+		display: block;
+	}
+
+	/*ハンバーガーメニュー 他の下層ページ共通*/
+	#nav-toggle {
+		display: block;
+	}
+
+	#top-head, .inner {
+		width: 100%;
+		padding: 0;
+	}
+
+	#top-head {
+		top: 0;
+		position: fixed;
+		margin-top: 0;
+	}
+
+	#top-head a, #top-head {
+		text-shadow: none;
+	}
+
+	#mobile-head {
+		background: rgba(255, 255, 255, 0.2);
+		width: 100%;
+		height: 22vw;
+		/* z-index: 999; */
+		position: relative;
+	}
+
+	#top-head.fixed .logo,
+	#top-head .logo {
+		color: #333;
+		font-size: 26px;
+	}
+
+	#gloval-nav {
+		position: absolute;
+		/* 開いてないときは画面外に配置 */
+		top: -556px;
+		background: rgba(255, 255, 255, 0.8);
+		width: 100%;
+		text-align: center;
+		padding: 50px 0;
+		-webkit-transition: .5s ease-in-out;
+		-moz-transition: .5s ease-in-out;
+		transition: .5s ease-in-out;
+	}
+
+	#gloval-nav ul {
+		width: 100%;
+		list-style: none;
+		position: static;
+		right: 0;
+		bottom: 0;
+		font-size: 14px;
+	}
+
+	#gloval-nav ul li {
+		float: none;
+		position: static;
+	}
+
+	#top-head #gloval-nav ul li a,
+	#top-head.fixed #gloval-nav ul li a {
+		color: #8B4513;
+		text-shadow: 1px 1px 3px #EEEEEE;
+		text-decoration: none;
+		font-family: "Comic Sans MS";
+		display: block;
+		padding: 18px 0;
+	}
+
+	/* #nav-toggle 切り替えアニメーション */
+	.open #nav-toggle span:nth-child(1) {
+		top: 11px;
+		-webkit-transform: rotate(315deg);
+		-moz-transform: rotate(315deg);
+		transform: rotate(315deg);
+	}
+
+	.open #nav-toggle span:nth-child(2) {
+		width: 0;
+		left: 50%;
+	}
+
+	.open #nav-toggle span:nth-child(3) {
+		top: 11px;
+		-webkit-transform: rotate(-315deg);
+		-moz-transform: rotate(-315deg);
+		transform: rotate(-315deg);
+	}
+
+	/* #global-nav スライドアニメーション */
+	.open #gloval-nav {
+		/* #global-nav top + #mobile-head height */
+		-moz-transform: translateY(556px);
+		-webkit-transform: translateY(556px);
+		transform: translateY(556px);
+	}
+
+	/*ここまでがハンバーガーメニュー実装*/
+
+
+	.main-drink_flex {
+		display: block;
+	}
+
+	.caferate {
+		max-width: 650px;
+		height: 89vw;
+		max-height: 585px;
+		width: 100%;
+	}
+
+	.drink1 {
+		width: 90%;
+		max-width: 650px;
+		margin: 0 auto;
+	}
+
+	.drink1 p {
+		font-size: 25px;
+		margin: 15px auto 0;
+	}
+
+	.drink1 p:nth-child(3) {
+		margin: 5px auto 100px;
+	}
+
+	.drink2 {
+		width: 90%;
+		max-width: 650px;
+		margin: 0 auto;
+	}
+
+	.macha {
+		width: 100%;
+		max-width: 650px;
+		height: 89vw;
+		max-height: 585px;
+	}
+
+	.drink2 p {
+		font-size: 25px;
+		margin: 15px auto 0;
+	}
+
+	.drink2 p:nth-child(3) {
+		margin: 5px auto 100px;
+	}
+
+	.sub-drink {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.sub-drink_menu {
+		width: 47%;
+		max-width: 310px;
+	}
+
+	.sub-drink_menu img {
+		height: 35vw;
+		/*		height: 40vw;*/
+		margin-bottom: 10px;
+	}
+
+	.sub-drink_menu p {
+		font-size: 18px;
+	}
+
+	/*	Foodメニュー*/
+	.main-food_flex {
+		display: block;
+	}
+
+	.food1 {
+		width: 90%;
+		max-width: 650px;
+		margin: 0 auto;
+	}
+
+	.food1 p {
+		font-size: 25px;
+		margin: 15px auto 0;
+	}
+
+	.food1 p:nth-child(3) {
+		margin: 5px auto 100px;
+	}
+
+	.sarada1 {
+		max-width: 650px;
+		height: 89vw;
+		max-height: 585px;
+		width: 100%;
+	}
+
+
+	.food2 {
+		width: 90%;
+		max-width: 650px;
+		margin: 0 auto;
+	}
+
+	.food2 p {
+		font-size: 25px;
+		margin: 15px auto 0;
+	}
+
+	.food2 p:nth-child(3) {
+		margin: 5px auto 100px;
+	}
+
+	.sandwich {
+		max-width: 650px;
+		height: 89vw;
+		max-height: 585px;
+		width: 100%;
+	}
+
+
+	.sub-food {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.sub-food_menu {
+		width: 47%;
+		max-width: 310px;
+	}
+
+	.sub-food_menu img {
+		height: 40vw;
+		margin-bottom: 10px;
+	}
+
+	.sub-food_menu p {
+		font-size: 18px;
+	}
+
+	/*	Topボタン*/
+	.topBtn-outer {
+		position: relative;
+	}
+
+	.topBtn {
+		position: absolute;
+		top: -5px;
+	}
+
+}
+
+@media screen and (max-width: 375px) {
+
+	/* ナビゲーションメニュー */
+	#mobile-head {
+		height: 33vw;
+		position: relative;
+	}
+
+	.logo-dc {
+		top: 5vw;
+		left: 5vw;
+		width: 35vw;
+		height: 23vw;
+	}
+
+
+	.menu-text p {
+		font-size: 1.1rem;
+	}
+
+	.title-drink {
+		font-size: 11vw;
+	}
+
+	.drink1 p {
+		font-size: 1.3rem;
+		margin: 0 auto;
+	}
+
+	.drink2 p {
+		font-size: 1.3rem;
+		margin: 0 auto;
+	}
+
+	.sub-drink_menu p {
+		font-size: 0.8rem;
+	}
+
+	.food-text {
+		font-size: 1.0rem;
+	}
+
+	.food1 p {
+		font-size: 1.3rem;
+		margin: 0 auto;
+	}
+
+	.food2 p {
+		font-size: 1.3rem;
+		margin: 0 auto;
+	}
+
+	.sub-food_menu p {
+		font-size: 0.8rem;
+	}
+
+	/*	Topボタン*/
+	.topBtn-outer {
+		position: relative;
+	}
+
+	.topBtn {
+		position: absolute;
+		top: -10px;
+	}
+
+}

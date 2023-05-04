@@ -1,0 +1,1556 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	/*	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;*/
+	padding: 0;
+	background-color: #FFFFFF;
+	color: #3c3c3c;
+	font-size: 15px;
+	font-feature-settings: "palt";
+	line-height: 2;
+	margin: 0 auto;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+}
+
+img {
+	vertical-align: bottom;
+	height: auto;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+button {
+	display: none;
+}
+
+body {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.fade_off {
+	opacity: 0;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+	transition: all 1s;
+}
+
+.fade_on {
+	opacity: 1;
+}
+
+#dogs {
+	/*	ヘッダーエリアの幅と高さを指定*/
+	height: 600px;
+	background-image: url("../images/dogs/carissa-weiser-GKY4WDO3QgY-unsplash.jpg");
+	margin: 0 auto;
+	background-position: center bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+	position: relative;
+	z-index: 2;
+}
+
+/*共通部分*/
+.main_visual {
+	background-color: #F2D6AA;
+}
+
+/*ナビゲーションバーの位置を指定する*/
+.gloval-nav2 {
+	position: absolute;
+	top: 50%;
+	left: 34%;
+	z-index: 2;
+}
+
+.gloval-nav2 {
+	float: right;
+}
+
+.gloval-nav2 li {
+	float: left;
+	margin: 0 20px;
+	list-style: none;
+	font-family: sans-serif;
+}
+
+.gloval-nav li a {
+	color: #FFCC99;
+	font-size: 1.7rem;
+}
+
+.gloval-nav2 li a {
+	color: #ffffff;
+	font-size: 1.5rem;
+}
+
+.gloval-nav2 li a:hover {
+	padding-bottom: 3px;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+.inner {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.inner:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+/*ハンバーガーメニュー 他のページ共通*/
+/* header */
+#top-head {
+	top: -70px;
+	position: absolute;
+	width: 100%;
+	margin: 100px auto 0;
+	padding: 30px 0 0;
+	line-height: 1;
+	z-index: 999;
+}
+
+#top-head a,
+#top-head {
+	color: #8B4513;
+	text-shadow: 1px 1px 3px #EEEEEE;
+	text-decoration: none;
+	font-family: "Comic Sans MS";
+}
+
+#top-head .inner {
+	position: relative;
+}
+
+#top-head .logo {
+	float: left;
+	font-size: 36px;
+	color: #000000;
+	padding-left: 5vw;
+}
+
+/* Fixed */
+#top-head.fixed {
+	margin-top: 0;
+	top: 0;
+	position: fixed;
+	height: 7vw;
+	background: #fff;
+	color: #000;
+	background-color: rgba(255, 255, 255, 0.8);
+	transition: top 0.65s ease-in;
+	-webkit-transition: top 0.65s ease-in;
+	-moz-transition: top 0.65s ease-in;
+}
+
+#top-head.fixed .logo {
+	font-size: 24px;
+	color: #333;
+	margin-top: 10px;
+}
+
+#top-head.fixed #global-nav ul li a {
+	color: #333;
+	padding: 0 20px;
+}
+
+/* Toggle Button */
+#nav-toggle {
+	display: none;
+	position: absolute;
+	right: 12px;
+	top: 21px;
+	width: 50px;
+	height: 36px;
+	cursor: pointer;
+	z-index: 999;
+}
+
+#nav-toggle div {
+	position: relative;
+}
+
+#nav-toggle span {
+	display: block;
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	background: #8B4513;
+	left: 0;
+	-webkit-transition: .35s ease-in-out;
+	-moz-transition: .35s ease-in-out;
+	transition: .35s ease-in-out;
+}
+
+#nav-toggle span:nth-child(1) {
+	top: 0;
+}
+
+#nav-toggle span:nth-child(2) {
+	top: 11px;
+}
+
+#nav-toggle span:nth-child(3) {
+	top: 22px;
+}
+
+/*ハンバーガーメニューここまで*/
+
+/*ロゴ*/
+.logo-dc {
+	width: 16vw;
+	position: absolute;
+	top: -2vw;
+}
+
+.main {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+.title-area {
+	background-color: #FFEFD5;
+	padding-bottom: 100px;
+}
+
+.text {
+	max-width: 850px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.title {
+	text-align: center;
+	font-size: 40px;
+	font-family: Chalkduster;
+	color: #FF9900;
+	display: block;
+}
+
+.title-dogs {
+	padding: 100px 0;
+}
+
+.title-text {
+	max-width: 650px;
+	margin: 0 auto;
+	text-align: left;
+	letter-spacing: 13px;
+}
+
+.title-text p {
+	font-family: 'Kosugi Maru', sans-serif;
+	font-size: 1.1rem;
+	letter-spacing: 0.7rem;
+}
+
+/*犬の紹介エリアの足跡の動き スタンプのように表現*/
+.dog-ashiato1, .dog-ashiato2, .dog-ashiato3, .dog-ashiato4, .dog-ashiato5, .dog-ashiato6, .dog-ashiato7 {
+	opacity: 0;
+}
+
+.dog-ashiato-gyaku1, .dog-ashiato-gyaku2, .dog-ashiato-gyaku3, .dog-ashiato-gyaku4, .dog-ashiato-gyaku5, .dog-ashiato-gyaku6, .dog-ashiato-gyaku7 {
+	opacity: 0;
+}
+
+.dog-ashiato2-1, .dog-ashiato2-2, .dog-ashiato2-3, .dog-ashiato2-4, .dog-ashiato2-5, .dog-ashiato2-6, .dog-ashiato2-7 {
+	opacity: 0;
+}
+
+.dog-ashiato-gyaku2-1, .dog-ashiato-gyaku2-2, .dog-ashiato-gyaku2-3, .dog-ashiato-gyaku2-4, .dog-ashiato-gyaku2-5, .dog-ashiato-gyaku2-6, .dog-ashiato-gyaku2-7 {
+	opacity: 0;
+}
+
+.fade_on {
+	opacity: 1;
+}
+
+.fade_off {
+	opacity: 0;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+	transition: all 1s;
+}
+
+.fade_on {
+	opacity: 1;
+}
+
+/*jQuery*/
+/*スクロールしてフワッとする動き*/
+
+/*jQuery フワッと表示する動き*/
+/*フワッと表示 Concept  Interior*/
+.shinamon-area {
+	opacity: 0.1;
+	transition: all 2.0s;
+}
+
+.shinamon-area.blockIn {
+	opacity: 1;
+}
+
+.yuzu-area {
+	opacity: 0.1;
+	transition: all 2.0s;
+}
+
+.yuzu-area.blockIn {
+	opacity: 1;
+}
+
+.malon-area {
+	opacity: 0.1;
+	transition: all 2.0s;
+}
+
+.malon-area.blockIn {
+	opacity: 1;
+}
+
+.hana-area {
+	opacity: 0.1;
+	transition: all 2.0s;
+}
+
+.hana-area.blockIn {
+	opacity: 1;
+}
+
+
+/*シナモン紹介エリア*/
+/*inview.js 動きここまで*/
+
+.shinamon-area {
+	height: 577px;
+	padding: 100px 0;
+}
+
+.dogs-intoro1 {
+	max-width: 825px;
+	margin: 0 auto;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+.dog-img1 {
+	display: flex;
+}
+
+
+.dog-shinamon {
+	position: relative;
+	flex: 1;
+}
+
+.shinamon {
+	position: absolute;
+	top: 11px;
+	width: 100%;
+}
+
+
+.shinamon:hover {
+	transform: scale(1.1);
+	transition-duration: 1.3s;
+}
+
+.hukidashi1 {
+	position: absolute;
+	top: -10%;
+	right: -3%;
+	width: 47%;
+}
+
+/*吹き出し動き*/
+.balloon.left .hukidashi1 {
+	transform-origin: left top;
+	animation: balloonAnime 3s ease-out 0s infinite normal both;
+}
+
+@keyframes balloonAnime {
+	0% {
+		transform: scale(1);
+	}
+
+	10% {
+		transform: scale(1.05);
+	}
+
+	20% {
+		transform: scale(1);
+	}
+
+	30% {
+		transform: scale(1.02);
+	}
+
+	40% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.dog-text1 {
+	flex: 1;
+	position: relative;
+}
+
+.shinamon-text {
+	width: 95%;
+	position: absolute;
+	left: 2vw;
+	top: 13vw;
+}
+
+
+
+/*ゆず紹介エリア*/
+.yuzu-area {
+	height: 577px;
+	padding: 100px 0;
+	background-color: #FFEFD5;
+}
+
+.dogs-intoro2 {
+	max-width: 825px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.dog-img2 {
+	display: flex;
+}
+
+.dog-yuzu {
+	position: relative;
+	flex: 1;
+}
+
+.yuzu {
+	position: absolute;
+	left: 90%;
+	width: 100%;
+}
+
+.yuzu:hover {
+	transform: scale(1.1);
+	transition-duration: 1.3s;
+}
+
+.hukidashi2 {
+	position: absolute;
+	width: 50%;
+	left: 140%;
+}
+
+/* 吹き出し（右）用 */
+.balloon.right .hukidashi2 {
+	transform-origin: right top;
+	animation: balloonAnime 3s ease-out 0s infinite normal both;
+}
+
+@keyframes balloonAnime {
+	0% {
+		transform: scale(1);
+	}
+
+	10% {
+		transform: scale(1.05);
+	}
+
+	20% {
+		transform: scale(1);
+	}
+
+	30% {
+		transform: scale(1.02);
+	}
+
+	40% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.dog-text2 {
+	flex: 1;
+	position: relative;
+}
+
+.yuzu-text {
+	position: absolute;
+	right: 107%;
+	width: 90%;
+	top: 107px;
+}
+
+.ashiato-gyaku {
+	width: 3%;
+}
+
+
+
+/*マロン紹介エリア*/
+.malon-area {
+	height: 577px;
+	padding: 100px 0;
+}
+
+.dogs-intoro3 {
+	max-width: 825px;
+	margin: 0 auto;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+.dog-img3 {
+	display: flex;
+}
+
+.dog-malon {
+	flex: 1;
+	position: relative;
+}
+
+.malon {
+	position: absolute;
+	top: 42%;
+}
+
+.malon:hover {
+	transform: scale(1.1);
+	transition-duration: 1.3s;
+}
+
+.hukidashi3 {
+	position: absolute;
+	top: -33px;
+	left: 52%;
+}
+
+/*吹き出し動き*/
+.balloon.left .hukidashi3 {
+	transform-origin: left top;
+	animation: balloonAnime 3s ease-out 0s infinite normal both;
+}
+
+@keyframes balloonAnime {
+	0% {
+		transform: scale(1);
+	}
+
+	10% {
+		transform: scale(1.05);
+	}
+
+	20% {
+		transform: scale(1);
+	}
+
+	30% {
+		transform: scale(1.02);
+	}
+
+	40% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.dog-text3 {
+	flex: 1;
+	position: relative;
+}
+
+.malon-text {
+	position: absolute;
+	top: 103px;
+	left: 23px;
+	width: 90%;
+}
+
+
+/*はな紹介エリア*/
+/*fadeIn*/
+.hana-area {}
+
+.fadeInLeft {
+	transition: all 1.0s ease-in-out;
+	transform: translateX(-30px);
+	opacity: 1 !important;
+}
+
+.hana-area {
+	background-color: #FFEFD5;
+	height: 577px;
+	padding: 100px 0;
+}
+
+.dogs-intoro4 {
+	max-width: 825px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.dog-img4 {
+	display: flex;
+}
+
+.dog-hana {
+	flex: 1;
+	position: relative;
+}
+
+.hana {
+	position: absolute;
+	top: 61px;
+	left: 96%;
+}
+
+.hana:hover {
+	transform: scale(1.1);
+	transition-duration: 1.3s;
+}
+
+.hukidashi4 {
+	position: absolute;
+	left: 136%;
+	top: -5vw;
+}
+
+.balloon.right .hukidashi4 {
+	transform-origin: right top;
+	animation: balloonAnime 3s ease-out 0s infinite normal both;
+}
+
+@keyframes balloonAnime {
+	0% {
+		transform: scale(1);
+	}
+
+	10% {
+		transform: scale(1.05);
+	}
+
+	20% {
+		transform: scale(1);
+	}
+
+	30% {
+		transform: scale(1.02);
+	}
+
+	40% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.dog-text4 {
+	flex: 1;
+	position: relative;
+}
+
+.hana-text {
+	position: absolute;
+	right: 106%;
+	top: 155px;
+	width: 91%;
+}
+
+.illust-aicon {
+	width: 50px;
+	height: 50px;
+}
+
+
+/*足跡エリア*/
+
+/*シナモン足跡*/
+.ashiato {
+	width: 40px;
+}
+
+/*シナモン足跡*/
+.ato1 {
+	position: relative;
+	margin: 360px 0 0px 400px;
+}
+
+.dog-ashiato1 {
+	position: absolute;
+}
+
+.dog-ashiato2 {
+	position: absolute;
+	top: 50px;
+	left: 20px;
+}
+
+.dog-ashiato3 {
+	position: absolute;
+	top: 40px;
+	left: 80px;
+}
+
+.dog-ashiato4 {
+	position: absolute;
+	top: 95px;
+	left: 75px;
+}
+
+.dog-ashiato5 {
+	position: absolute;
+	top: 90px;
+	left: 135px;
+}
+
+.dog-ashiato6 {
+	position: absolute;
+	top: 145px;
+	left: 135px;
+}
+
+.dog-ashiato7 {
+	position: absolute;
+	top: 140px;
+	left: 195px;
+}
+
+/*ゆず足跡*/
+.ashiato-gyaku {
+	width: 40px;
+}
+
+.ato2 {
+	width: 55px;
+	height: 200px;
+	position: relative;
+	margin: 400px 0 0 350px;
+}
+
+.dog-ashiato-gyaku1 {
+	position: absolute;
+}
+
+.dog-ashiato-gyaku2 {
+	position: absolute;
+	top: 56px;
+	right: 27px;
+
+}
+
+.dog-ashiato-gyaku3 {
+	position: absolute;
+	top: 32px;
+	right: 82px;
+}
+
+.dog-ashiato-gyaku4 {
+	position: absolute;
+	top: 99px;
+	right: 69px;
+}
+
+.dog-ashiato-gyaku5 {
+	position: absolute;
+	top: 75px;
+	right: 134px;
+}
+
+.dog-ashiato-gyaku6 {
+	position: absolute;
+	top: 141px;
+	right: 121px;
+}
+
+.dog-ashiato-gyaku7 {
+	position: absolute;
+	top: 128px;
+	right: 190px;
+}
+
+/*マロン足跡*/
+.ato3 {
+	position: relative;
+	margin: 380px 0 0 428px;
+}
+
+.dog-ashiato2-1 {
+	position: absolute;
+}
+
+.dog-ashiato2-2 {
+	position: absolute;
+	top: 50px;
+	left: 20px;
+}
+
+.dog-ashiato2-3 {
+	position: absolute;
+	top: 40px;
+	left: 80px;
+}
+
+.dog-ashiato2-4 {
+	position: absolute;
+	top: 95px;
+	left: 75px;
+}
+
+.dog-ashiato2-5 {
+	position: absolute;
+	top: 90px;
+	left: 135px;
+}
+
+.dog-ashiato2-6 {
+	position: absolute;
+	top: 145px;
+	left: 135px;
+}
+
+.dog-ashiato2-7 {
+	position: absolute;
+	top: 140px;
+	left: 195px;
+}
+
+/*はな足跡*/
+.ato4 {
+	width: 55px;
+	height: 200px;
+	position: relative;
+	margin: 400px 0 0 350px;
+}
+
+.dog-ashiato-gyaku2-1 {
+	position: absolute;
+}
+
+.dog-ashiato-gyaku2-2 {
+	position: absolute;
+	top: 56px;
+	right: 27px;
+}
+
+.dog-ashiato-gyaku2-3 {
+	position: absolute;
+	top: 32px;
+	right: 82px;
+}
+
+.dog-ashiato-gyaku2-4 {
+	position: absolute;
+	top: 99px;
+	right: 69px;
+}
+
+.dog-ashiato-gyaku2-5 {
+	position: absolute;
+	top: 76px;
+	left: -120px;
+}
+
+.dog-ashiato-gyaku2-6 {
+	position: absolute;
+	top: 141px;
+	right: 121px;
+}
+
+.dog-ashiato-gyaku2-7 {
+	position: absolute;
+	top: 128px;
+	right: 190px;
+}
+
+/*google mapエリア*/
+.google-map {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+
+.google-map iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+/*ページトップボタン*/
+.topBtn {
+	position: relative;
+	position: fixed;
+	/*固定*/
+	bottom: 20px;
+	/*場所を右下に移動*/
+	right: 20px;
+	/*場所を右下に移動*/
+	display: block;
+	/*aタグをblock要素に変更*/
+	background-color: #F6B37F;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 11px;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	line-height: 18px;
+	border-radius: 50px;
+	/*  padding-top: 30px;*/
+	padding: 0.5rem 1rem;
+	box-sizing: border-box;
+	-webkit-transition-property: opacity;
+	transition-duration: .5s;
+	-webkit-transition-duration: .5s;
+	z-index: 3;
+}
+
+.topBtn a {
+	text-decoration: none;
+}
+
+.topBtn:before {
+	content: '\02227';
+	position: absolute;
+	top: 42px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	color: #FFFFFF;
+}
+
+.topBtn-text {
+	position: absolute;
+	bottom: 26px;
+	right: 5px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.topBtn:hover {
+	opacity: 0.5;
+}
+
+/*footerエリア*/
+footer {
+	text-align: center;
+	padding: 50px 0 20px 0;
+	background-color: #FFFFFF
+}
+
+footer .insta {
+	margin: 20px 0;
+	width: 40px;
+	height: 40px;
+	padding: 40px 10px;
+}
+
+footer .insta:hover {
+	transform: scale(1.3);
+	transition-duration: 1.0s;
+}
+
+footer .fb {
+	margin: 20px 0;
+	width: 40px;
+	height: 40px;
+	padding: 40px 10px;
+}
+
+footer .fb:hover {
+	transform: scale(1.3);
+	transition-duration: 1.0s;
+}
+
+footer .copyright {
+	color: #000000;
+	font-size: 18px;
+}
+
+/*レスポンシブ対応*/
+@media screen and (max-width: 768px) {
+	h2 {
+		font-size: 1.2rem;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
+
+	.img {
+		width: 100%;
+	}
+
+	.title-text {
+		max-width: 600px;
+		width: 87%;
+		margin: 0 auto;
+		font-size: 1px;
+		letter-spacing: 1rem;
+		line-height: 1.7rem;
+	}
+
+
+	/* このクラスを、jQueryで付与・削除する */
+	nav.nav.active {
+		opacity: 100;
+
+	}
+
+	/*	ここからハンバーガーメニュー*/
+	#top-head, .inner {
+		width: 100%;
+		padding: 0;
+	}
+
+	#top-head {
+		top: 0;
+		position: fixed;
+		margin-top: 0;
+	}
+
+	#mobile-head {
+		background: rgba(255, 255, 255, 0.2);
+		width: 100%;
+		height: 22vw;
+		/* z-index: 999; */
+		position: relative;
+	}
+
+	#top-head.fixed .logo,
+	#top-head .logo {
+		/*
+			position: absolute;
+			left: 13px;
+			top: 21px;
+*/
+		color: #333;
+		font-size: 26px;
+	}
+
+	#top-head, #top-head a {
+		text-shadow: none;
+	}
+
+	#gloval-nav {
+		position: absolute;
+		/* 開いてないときは画面外に配置 */
+		top: -556px;
+		background: rgba(255, 255, 255, 0.8);
+		width: 100%;
+		text-align: center;
+		padding: 50px 0;
+		-webkit-transition: .5s ease-in-out;
+		-moz-transition: .5s ease-in-out;
+		transition: .5s ease-in-out;
+	}
+
+	#gloval-nav ul {
+		width: 100%;
+		list-style: none;
+		position: static;
+		right: 0;
+		bottom: 0;
+		font-size: 14px;
+	}
+
+	#gloval-nav ul li {
+		float: none;
+		position: static;
+	}
+
+	#top-head #gloval-nav ul li a,
+	#top-head.fixed #gloval-nav ul li a {
+		color: #8B4513;
+		text-shadow: 1px 1px 3px #EEEEEE;
+		text-decoration: none;
+		font-family: "Comic Sans MS";
+		display: block;
+		padding: 18px 0;
+	}
+
+	/* #nav-toggle 切り替えアニメーション */
+	.open #nav-toggle span:nth-child(1) {
+		top: 11px;
+		-webkit-transform: rotate(315deg);
+		-moz-transform: rotate(315deg);
+		transform: rotate(315deg);
+	}
+
+	.open #nav-toggle span:nth-child(2) {
+		width: 0;
+		left: 50%;
+	}
+
+	.open #nav-toggle span:nth-child(3) {
+		top: 11px;
+		-webkit-transform: rotate(-315deg);
+		-moz-transform: rotate(-315deg);
+		transform: rotate(-315deg);
+	}
+
+	/* #global-nav スライドアニメーション */
+	.open #gloval-nav {
+		/* #global-nav top + #mobile-head height */
+		-moz-transform: translateY(556px);
+		-webkit-transform: translateY(556px);
+		transform: translateY(556px);
+	}
+
+
+	/*ハンバーガーメニュー 他の下層ページ共通*/
+	.nav {
+		margin-top: -20px;
+	}
+
+	.nav-sp {
+		width: 100%;
+		max-width: 768px;
+		height: 100vh;
+		opacity: 2;
+		color: #000000;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/* 初期：非表示 */
+		visibility: hidden;
+		/* ふわっと表示 */
+		transition: 0.5s ease-in-out;
+	}
+
+	#nav-toggle {
+		display: block;
+	}
+
+	.bg {
+		background-color: rgba(255, 255, 255, 0.8);
+	}
+
+	.nav-sp ul {
+		list-style: none;
+	}
+
+	.nav-sp li:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	.nav-sp a {
+		color: #000000;
+		font-size: 29px;
+		text-decoration: none;
+	}
+
+	.nav-sp a:hover {
+		opacity: 0.6;
+	}
+
+	.btn-sp span {
+		background-color: #C0C0C0;
+		width: 5px;
+	}
+
+	.main-visual-img {
+		z-index: 1;
+	}
+
+	/*	ここまで(ハンバーガーメニューの実装)*/
+
+
+	/*	ロゴ*/
+	.logo-dc {
+		top: 1.3vw;
+		left: 3vw;
+		width: 23vw;
+		height: 15vw;
+	}
+
+	.ato1 {
+		display: none;
+	}
+
+	.ato2 {
+		display: none;
+	}
+
+	.ato3 {
+		display: none;
+	}
+
+	.ato4 {
+		display: none;
+	}
+
+	/*	シナモンちゃん*/
+	.shinamon-area {
+		height: 108vw;
+		/*
+		max-width: 650px;
+		margin: 0 auto;
+*/
+	}
+
+	.shinamon:hover {
+		transform: scale(1.0);
+	}
+
+
+	.dog-img1 {
+		display: block;
+	}
+
+	.dog-shinamon {
+		height: 30px;
+		display: block;
+		width: 65%;
+		max-width: 510px;
+		margin: 0 auto;
+	}
+
+	.shinamon {
+		position: absolute;
+		left: 0vw;
+		top: 11vw;
+		width: 65vw;
+	}
+
+	.hukidashi1 {
+		position: absolute;
+		top: 0;
+		left: 30vw;
+		width: 30vw;
+	}
+
+	.shinamon-text {
+		position: absolute;
+		top: 73vw;
+		left: 20vw;
+		width: 60vw;
+	}
+
+	/*	ゆずくん*/
+	.yuzu-area {
+		height: 100vw;
+	}
+
+	.dog-yuzu {
+		display: block;
+		max-width: 510px;
+		margin: 0 auto;
+	}
+
+	.yuzu {
+		position: absolute;
+		top: 7vw;
+		left: 19vw;
+		width: 60vw;
+	}
+
+	.yuzu:hover {
+		transform: scale(1.0);
+	}
+
+	.hukidashi2 {
+		position: absolute;
+		top: 5vw;
+		left: 80%;
+		width: 30vw;
+	}
+
+	.dog-text2 {
+		position: relative;
+	}
+
+	.yuzu-text {
+		position: absolute;
+		left: -30vw;
+		top: 66vw;
+		width: 60vw;
+	}
+
+	/*マロンちゃん*/
+	.malon-area {
+		height: 113vw;
+		max-width: 650px;
+		margin: 0 auto;
+	}
+
+	.dog-malon {
+		position: relative;
+	}
+
+	.malon {
+		position: absolute;
+		top: 10vw;
+		left: 17vw;
+		width: 60vw;
+	}
+
+	.malon:hover {
+		transform: scale(1.0);
+	}
+
+	.hukidashi3 {
+		width: 30vw;
+		top: 3vw;
+		left: 40vw;
+		height: auto;
+	}
+
+	.dog-text3 {
+		position: relative;
+	}
+
+	.malon-text {
+		position: absolute;
+		top: 72vw;
+		left: -30vw;
+		width: 60vw;
+	}
+
+	/*はなちゃん*/
+	.hana-area {
+		height: 118vw;
+	}
+
+	.dog-hana {
+		position: relative;
+	}
+
+	.hana {
+		position: absolute;
+		top: 20vw;
+		left: 20vw;
+		width: 60vw;
+	}
+
+	.hana:hover {
+		transform: scale(1.0);
+	}
+
+	.dog-text4 {
+		position: relative;
+	}
+
+	.hana-text {
+		position: absolute;
+		top: 80vw;
+		left: -30vw;
+		width: 60vw;
+	}
+
+	.hukidashi4 {
+		width: 30vw;
+		position: absolute;
+		left: 47vw;
+		top: 5vw;
+	}
+
+	/*	固定ボタン*/
+	.topBtn-outer {
+		position: relative;
+	}
+
+	.topBtn {
+		position: absolute;
+		top: 230px;
+	}
+}
+
+
+
+
+@media screen and (max-width: 375px) {
+
+	/* ナビゲーションメニュー */
+	#mobile-head {
+		height: 33vw;
+		position: relative;
+	}
+
+	.logo-dc {
+		top: 5vw;
+		left: 5vw;
+		width: 35vw;
+		height: 23vw;
+	}
+
+
+	/* ナビゲーションメニューここまで */
+
+
+	/*	シナモンエリア*/
+	.shinamon-area {
+		height: 118vw;
+	}
+
+	/*	フワッと表示しない*/
+	.shinamon-area {
+		opacity: 1;
+	}
+
+	.yuzu-area {
+		opacity: 1;
+	}
+
+	.malon-area {
+		opacity: 1;
+	}
+
+	.hana-area {
+		opacity: 1;
+	}
+
+
+	.hukidashi1 {
+		position: absolute;
+		left: 47vw;
+		top: -9vw;
+		width: 40vw;
+	}
+
+	.dog-shinamon {
+		height: 0;
+		width: 100%;
+	}
+
+	.shinamon {
+		position: absolute;
+		left: 20px;
+		top: 5vw;
+		width: 85vw
+	}
+
+	.shinamon-text {
+		position: absolute;
+		top: 90vw;
+		left: 7vw;
+		width: 85vw;
+	}
+
+
+	/*ゆずエリア*/
+	.yuzu-area {
+		height: 115vw;
+	}
+
+	.yuzu {
+		position: absolute;
+		top: 3vw;
+		left: 8vw;
+		width: 80vw;
+	}
+
+	.hukidashi2 {
+		position: absolute;
+		top: -2vw;
+		width: 40vw;
+	}
+
+	.yuzu-text {
+		position: absolute;
+		top: 82vw;
+		left: -42vw;
+		width: 85vw;
+	}
+
+
+	/*	マロンエリア*/
+	.malon-area {
+		height: 118vw;
+	}
+
+	.hukidashi3 {
+		position: absolute;
+		top: -6vw;
+		width: 40vw;
+	}
+
+	.malon {
+		position: absolute;
+		top: 4vw;
+		left: 17vw;
+		width: 70vw;
+	}
+
+	.malon-text {
+		position: absolute;
+		top: 75vw;
+		left: -39vw;
+		width: 80vw;
+	}
+
+	/*はなエリア*/
+	.hana-area {
+		height: 127vw;
+	}
+
+	.hukidashi4 {
+		position: absolute;
+		top: -8vw;
+		width: 40vw;
+	}
+
+	.hana {
+		position: absolute;
+		top: 10vw;
+		left: 10vw;
+		width: 80vw;
+	}
+
+	.hana-text {
+		position: absolute;
+		top: 88vw;
+		left: -40vw;
+		width: 80vw;
+	}
+}
