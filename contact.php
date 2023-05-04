@@ -15,57 +15,6 @@ if(!empty($_POST['name']) && !empty($_POST['kana_name']) && !empty($_POST['mail'
 	$tell = htmlspecialchars($_POST['tell'], ENT_QUOTES | ENT_HTML5);
 	$inquiry = htmlspecialchars($_POST['inquiry'], ENT_QUOTES | ENT_HTML5);
 }
-
-// バリデーションチェック
-// フォームが送信された場合にのみバリデーションを行う
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-	$name = $_POST['kana_name'];
-	$kana_name = $_POST['name'];
-	$mail = $_POST['mail'];
-	$inquiry = $_POST['inquiry'];
-  
-	// 名前が入力されているかどうかを確認する
-	if (empty($name)) {
-	  $errors[] = 'お名前を入力してください。';
-	}
-
-	// フリガナが入力されているかどうかを確認する
-	if (empty($kana_name)) {
-		$errors[] = 'フリガナを入力してください。';
-	  }
-
-	// メールアドレスが正しい形式で入力されているかどうかを確認する
-	if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-	  $errors[] = '正しいメールアドレスを入力してください。';
-	}
-  
-	// メッセージが入力されているかどうかを確認する
-	if (empty($inquiry)) {
-	  $errors[] = 'お問い合わせ内容を入力してください。';
-	}
-  
-	// エラーがない場合はメールを送信する
-	if (empty($errors)) {
-	  // メールを送信する処理を記述する
-	  // 送信先のメールアドレスを指定する
-	  $to = 'ayatsujisan2@gmail.com';
-
-	  // メールの件名を指定する
-	  $subject = 'お問い合わせがありました';
-  
-	  // メールの本文を作成する
-	  $body = "お名前：{$name}\nメールアドレス：{$mail}\n\n{$inquiry}";
-  
-	  // メールを送信する
-	  if (mail($to, $subject, $body)) {
-		// 送信成功のメッセージを表示する
-		echo 'メールを送信しました。';
-	  } else {
-		// 送信失敗のメッセージを表示する
-		echo 'メールの送信に失敗しました。';
-	  }
-	}
-  }
 ?>
 
 <!doctype html>
@@ -144,30 +93,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 							   お名前 <span class="Form-Item-Label-Required">必須</span>
 							 </p>
 								 <input type="text" value="" name="name" id="name" class="Form-Item-Input-sei" placeholder="姓名">
-								 <?php echo isset($flash['name']) ? $flash['name'] : null ?>
 						   </div>
 							<div class="Form-Item">
 								<p class="Form-Item-Label">
 									フリガナ  <span class="Form-Item-Label-Required">必須</span>
 								</p> 
-								<input type="text" name="kana_name" id="kana_name" class="Form-Item-Input-sei" placeholder="セイメイ">
-								<?php echo isset($flash['kana_name']) ? $flash['kana_name'] : null ?>
+								<input type="text" value="" name="kana_name" id="kana_name" class="Form-Item-Input-sei" placeholder="セイメイ">
 							</div>
 							<div class="Form-Item">
 								<p class="Form-Item-Label">メールアドレス  <span class="Form-Item-Label-Required">必須</span></p>
-								<input type="email" name="mail" id="mail" class="Form-Item-Input2" placeholder="メールアドレスを入力してください">
-								<?php echo isset($flash['mail']) ? $flash['mail'] : null ?>
+								<input type="email" value="" name="mail" id="mail" class="Form-Item-Input2" placeholder="メールアドレスを入力してください">
 							</div>
 							<div class="Form-Item">
 								<p class="Form-Item-Label">
 									電話番号
 								</p>
-								<input type="text" name="tell" id="tell" class="Form-Item-Input2" placeholder="電話番号を入力してください">
+								<input type="text" value="" name="tell" id="tell" class="Form-Item-Input2" placeholder="電話番号を入力してください">
 							</div>
 							<div class="Form-Item">
 								<p class="Form-Item-Label isMsg">お問い合わせ内容 <span class="Form-Item-Label-Required">必須</span></p>
-								<?php echo isset($original['inquiry']) ? $original['inquiry'] : null;?>
-								<input type="text" name="inquiry" id="inquiry" class="Form-Item-Input3" placeholder="ご質問、お問い合わせを入力してください">
+								<input type="text" value="" name="inquiry" id="inquiry" class="Form-Item-Input3" placeholder="お問い合わせ内容を入力してください">
 							</div>
 						 <input type="submit" class="Form-Btn" id="sbtn" name="submit" value="送信ボタン">
 						 </div>
@@ -188,18 +133,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	</div>
 </footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+	<!-- 日本語のエラーメッセージを読み込み -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/localization/messages_ja.min.js"></script>
 	<script>
-		
+				
 		//ナビゲーションメニュー
-	$(function(){
-    //表示するスクロール量（px）
-    var scrollPoint = 60;
-    $(window).scroll(function(){
-        if($(this).scrollTop() > scrollPoint){
-            $('#top-head').fadeIn();
-        }
-    });
-});
+		$(function(){
+			//表示するスクロール量（px）
+			var scrollPoint = 60;
+			$(window).scroll(function(){
+				if($(this).scrollTop() > scrollPoint){
+					$('#top-head').fadeIn();
+				}
+			});
+		});
 
 		//ハンバーガーメニュー
 		$(function() {
@@ -220,6 +168,54 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			   $header.toggleClass('open');
 		   });
 		});	
+
+		//バリデーションチェック
+		$(function() {
+			if($('#form').length) {
+				$('#form').validate({
+					rules: {
+						name: {
+							required: true,
+						},
+						kana_name: {
+							required: true,
+						},
+						mail: {
+							required: true,
+							email: true
+						},
+						tell: {
+							required: false,
+							number: true
+						},
+						inquiry: {
+							required: true,
+							maxlength: 100
+						}
+			},
+			messages: {
+				name: {
+					required: '必須項目です。入力をお願いします。'
+				},
+				kana_name: {
+					required: '必須項目です。入力をお願いします。'
+				},
+				mail: {
+					required: '必須項目です。入力をお願いします。',
+					mail: 'Eメールの形式で入力して下さい。'
+				},
+				tell: {
+					required: '必須項目です。入力をお願いします。',
+					number: '電話番号の形式で入力して下さい。'
+				},
+				inquiry: {
+					required: '必須項目です。入力をお願いします。',
+					maxlength: '最大文字数100を超えています。文章を短くして下さい。'
+				}
+			},
+				});
+			}
+		});
 	</script>
 </body>
 </html>

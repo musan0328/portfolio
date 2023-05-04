@@ -176,8 +176,6 @@ a:hover {
   top: -2vw;
 }
 
-
-
 .gloval-nav {
   position: absolute;
   top: 10%;
@@ -233,8 +231,6 @@ a:hover {
   text-decoration: none;
   opacity: 0.8;
 }
-
-
 
 .content {
   width: 100%;
@@ -311,6 +307,30 @@ a:hover {
   }
 }
 
+
+/* バリデーションチェック */
+#name-error, #kana_name-error, #mail-error, #inquiry-error {
+  cursor: pointer;
+  color: #d70d19;
+  display: block;
+  font-size: 1.0rem;
+}
+
+
+@media screen and (max-width: 680px) {
+
+  .contact_form tr,
+  .contact_form td {
+    display: block;
+    width: 100%;
+  }
+
+  .contact_form th {
+    display: block;
+    width: 100%;
+    padding: 20px 20px 0;
+  }
+}
 
 
 @media screen and (max-width: 768px) {
@@ -549,7 +569,7 @@ a:hover {
   margin-right: 22px;
   padding-left: 1em;
   padding-right: 1em;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   height: 48px;
   flex: 1;
   width: 100%;
@@ -648,12 +668,12 @@ a:hover {
   margin-right: auto;
   margin-bottom: 100px;
   padding: 10px 0;
-  width: 15vw;
+  width: 280px;
   display: block;
   letter-spacing: 0.05em;
   background: #F8B551;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 30px;
   border: none;
   text-align: center;
 }
@@ -661,6 +681,10 @@ a:hover {
 .Form-Btn:hover {
   transition: 1.3s;
   opacity: 0.8;
+}
+
+.Form-Item-Input-sei, .Form-Item-Input2 {
+  width: 90%;
 }
 
 /*google mapエリア*/
@@ -736,5 +760,29 @@ footer .copyright {
 
   .Form {
     margin-top: 200px;
+  }
+
+  .Form-Item-Input-sei, .Form-Item-Input2 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .irast {
+    width: 45vw;
+    height: 45vw;
+  }
+
+  #nav-toggle {
+    position: absolute;
+    right: 25px;
+  }
+
+  .Form-Item-Input-sei, .Form-Item-Input2 {
+    width: 84%;
+  }
+
+  .Form-Btn {
+    width: 240px;
   }
 }
