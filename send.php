@@ -19,6 +19,16 @@
 
     //指定したメールアドレスにメールが届く
     mail('ayatsujisan2@gmail.com', 'お問い合わせ', $mailText);
+
+    // 文字コードをUTF-8に変換
+    $name = mb_encode_mimeheader($name);
+    $kana_name 	= mb_encode_mimeheader($kana_name);
+    $mail = mb_encode_mimeheader($mail);
+    $tell = mb_encode_mimeheader($tell);
+    $inquiry = mb_encode_mimeheader($inquiry);
+    
+    // PHPの文字コードをUTF-8に指定
+    mb_internal_encoding("utf-8");
 ?>
 
 <!DOCTYPE html>
@@ -92,16 +102,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script>
 		
-            //ナビゲーションメニュー
+        //ナビゲーションメニュー
         $(function(){
-        //表示するスクロール量（px）
-        var scrollPoint = 60;
-        $(window).scroll(function(){
-            if($(this).scrollTop() > scrollPoint){
-                $('#top-head').fadeIn();
-            }
+            //表示するスクロール量（px）
+            var scrollPoint = 60;
+            $(window).scroll(function(){
+                if($(this).scrollTop() > scrollPoint){
+                    $('#top-head').fadeIn();
+                }
+            });
         });
-    });
 
             //ハンバーガーメニュー
             $(function() {

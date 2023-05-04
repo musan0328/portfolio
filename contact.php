@@ -96,13 +96,17 @@ if(!empty($_POST['name']) && !empty($_POST['kana_name']) && !empty($_POST['mail'
 						   </div>
 							<div class="Form-Item">
 								<p class="Form-Item-Label">
-									フリガナ  <span class="Form-Item-Label-Required">必須</span>
+									ふりがな  <span class="Form-Item-Label-Required">必須</span>
 								</p> 
 								<input type="text" value="" name="kana_name" id="kana_name" class="Form-Item-Input-sei" placeholder="セイメイ">
 							</div>
 							<div class="Form-Item">
 								<p class="Form-Item-Label">メールアドレス  <span class="Form-Item-Label-Required">必須</span></p>
 								<input type="email" value="" name="mail" id="mail" class="Form-Item-Input2" placeholder="メールアドレスを入力してください">
+							</div>
+							<div class="Form-Item">
+								<p class="Form-Item-Label">メールアドレス (確認) <span class="Form-Item-Label-Required">必須</span></p>
+								<input type="email" value="" name="mail_conf" id="mail_conf" class="Form-Item-Input2" placeholder="メールアドレスを入力してください">
 							</div>
 							<div class="Form-Item">
 								<p class="Form-Item-Label">
@@ -112,7 +116,12 @@ if(!empty($_POST['name']) && !empty($_POST['kana_name']) && !empty($_POST['mail'
 							</div>
 							<div class="Form-Item">
 								<p class="Form-Item-Label isMsg">お問い合わせ内容 <span class="Form-Item-Label-Required">必須</span></p>
-								<input type="text" value="" name="inquiry" id="inquiry" class="Form-Item-Input3" placeholder="お問い合わせ内容を入力してください">
+								<textarea value="" name="inquiry" id="inquiry" class="Form-Item-Input3" placeholder="お問い合わせ内容を入力してください"></textarea>
+							</div>
+							<div class="Form-Item">
+								<p class="Form-Item-LabelP">個人情報の取扱について <span class="Form-Item-Label-Required">必須</span></p>
+								<span class="checkbox_txt">個人情報保護方針に同意する</span>
+								<input type="checkbox" id="privacy_policy" name="privacy_policy[]" value="個人情報保護方針に同意する"></label>
 							</div>
 						 <input type="submit" class="Form-Btn" id="sbtn" name="submit" value="送信ボタン">
 						 </div>
@@ -184,13 +193,21 @@ if(!empty($_POST['name']) && !empty($_POST['kana_name']) && !empty($_POST['mail'
 							required: true,
 							email: true
 						},
+						mail_conf: {
+							required: true,
+							email: true,
+							equalTo: '#mail'
+						},
 						tell: {
 							required: false,
 							number: true
 						},
 						inquiry: {
 							required: true,
-							maxlength: 100
+							maxlength: 300
+						},
+						'privacy_policy[]': {
+							required: true
 						}
 			},
 			messages: {
@@ -204,13 +221,21 @@ if(!empty($_POST['name']) && !empty($_POST['kana_name']) && !empty($_POST['mail'
 					required: '必須項目です。入力をお願いします。',
 					mail: 'Eメールの形式で入力して下さい。'
 				},
+				mail_conf: {
+					required: '必須項目です。入力をお願いします。',
+					email: 'Eメールの形式で入力して下さい。',
+					equalTo: '入力した値が一致しません。'
+				},
 				tell: {
 					required: '必須項目です。入力をお願いします。',
 					number: '電話番号の形式で入力して下さい。'
 				},
 				inquiry: {
 					required: '必須項目です。入力をお願いします。',
-					maxlength: '最大文字数100を超えています。文章を短くして下さい。'
+					maxlength: '文字数が300を超えています。文章を短くして下さい。'
+				},
+				'privacy_policy[]': {
+					required: '必須項目です。選択して下さい。'
 				}
 			},
 				});

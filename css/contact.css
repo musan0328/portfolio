@@ -264,6 +264,33 @@ a:hover {
   font-family: 'Kosugi Maru', sans-serif;
 }
 
+/* 個人情報保護について */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.checkbox_label {
+  cursor: pointer;
+  display: block;
+}
+
+.checkbox_txt {
+  vertical-align: top;
+  font-size: 1.0rem;
+}
+
+.Form-Item-LabelP {
+  width: 100%;
+  max-width: 260px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .irast {
   display: inline-block;
   padding-left: 67%;
@@ -309,13 +336,19 @@ a:hover {
 
 
 /* バリデーションチェック */
-#name-error, #kana_name-error, #mail-error, #inquiry-error {
+#name-error, #kana_name-error, #mail-error, #mail_conf-error, #inquiry-error, #tell-error {
   cursor: pointer;
   color: #d70d19;
   display: block;
   font-size: 1.0rem;
 }
 
+label[for] {
+  cursor: pointer;
+  color: #d70d19;
+  font-size: 1.0rem;
+  display: block;
+}
 
 @media screen and (max-width: 680px) {
 
@@ -599,7 +632,6 @@ a:hover {
 .Form-Item-Input2 {
   border: 1px solid #ddd;
   border-radius: 6px;
-  /*    margin-left: 23px;*/
   padding-left: 1em;
   padding-right: 1em;
   height: 48px;
@@ -622,6 +654,7 @@ a:hover {
   max-width: 530px;
   background: #eaedf2;
   font-size: 14px;
+  resize: none;
 }
 
 @media screen and (max-width: 480px) {
