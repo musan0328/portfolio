@@ -316,33 +316,38 @@
 
 		//スライダー
 		$(function () {
-			$(".main-visual").slick({
-				arrows: false,
-				autoplay: true,
-				adaptiveHeight: true,
-				dots: false,
-				speed: 600,
-				autoplaySpeed: 5000,
-				stopAutoOnClick: true,
-				pager: true,
-				dotsClass: "slide-dots"
-			})
-			//   .on({
-			//       // スライドが移動する前に表示されているスライドに"animation"のclassをつける
-			//       // "animation"のclassを消すための"remove"classを付ける
-			//       beforeChange: function (event, slick, currentSlide, nextSlide) {
-			//         $(".slick-slide", this).eq(nextSlide).addClass("animation");
-			//         $(".slick-slide", this).eq(currentSlide).addClass("remove");
-			//       },
-			//       // スライドが移動した後に表示していないスライダーはアニメーションのclassを外す
-			//       afterChange: function () {
-			//         $(".remove", this).removeClass(
-			//           "remove animation"
-			//         );
-			//       },
-			//   });
+			$(".main-visual")
+				// 最初のスライドに"add-animation"のclassを付ける(data-slick-index="0"が最初のスライドを指す)
+				.on("init", function () {
+					$('.slick-slide[data-slick-index="0"]').addClass("add-animation");
+				})
+				.slick({
+					arrows: false,
+					autoplay: true,
+					fade: true,
+					adaptiveHeight: true,
+					dots: false,
+					speed: 500,
+					autoplaySpeed: 3000,
+					stopAutoOnClick: true,
+					pager: true,
+					dotsClass: "slide-dots"
+				})
+				.on({
+					// スライドが移動する前に表示されているスライドに"animation"のclassをつける
+					// "animation"のclassを消すための"remove"classを付ける
+					beforeChange: function (event, slick, currentSlide, nextSlide) {
+						$(".slick-slide", this).eq(nextSlide).addClass("add-animation");
+						$(".slick-slide", this).eq(currentSlide).addClass("remove-animation");
+					},
+					// スライドが移動した後に表示していないスライダーはアニメーションのclassを外す
+					afterChange: function () {
+						$(".remove-animation", this).removeClass(
+							"remove-animation add-animation"
+						);
+					},
+				});
 		});
-
 
 		// PCとSPの画像を切り替える
 		// 	$(function(){
@@ -407,7 +412,6 @@
 			});
 		});
 
-
 		//ハンバーガーメニュー
 		$(function () {
 			var $header = $('#top-head');
@@ -428,8 +432,6 @@
 			});
 		});
 
-
-
 		//フワッと表示 透明度 変化
 		$(function () {
 			$(window).scroll(function () {
@@ -447,7 +449,6 @@
 			});
 		});
 
-
 		//FadeIn
 		$('.content').on('inview', function () {
 			$(this).addClass('fadeInLeft');
@@ -461,7 +462,6 @@
 
 			console.log('test');
 		});
-
 
 		//インテリアエリアの動き
 		$(document).ready(function () {
