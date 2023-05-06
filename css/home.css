@@ -455,7 +455,7 @@ a:hover {
 	width: 50%;
 	max-width: 700px;
 	float: right;
-	padding: 60px;
+	padding: 80px;
 	line-height: 2.5;
 	box-sizing: border-box;
 	letter-spacing: 0.2em;
@@ -831,7 +831,6 @@ a.btn--shadow {
 
 .gallerie {
 	max-width: 880px;
-	/*    padding-bottom: 60px;*/
 	margin: 0 auto;
 	justify-content: space-between;
 }
@@ -1163,19 +1162,21 @@ footer .copyright {
 
 	/*	ここまでがハンバーガーメニュー*/
 
+	.main_visual-img {
+		object-fit: cover;
+	}
+
 	.main-visual-sp {
 		display: block;
 		height: 100%;
 	}
 
 	.main-visual-sp-img {
-		/*		height: 100vw;*/
 		height: 100vh;
 		object-fit: cover;
 	}
 
 	.main-visual-sp-img:first-child {
-		/*		transform: scale(1.5) translate(-24px,25px);*/
 		object-position: 0% 50%;
 	}
 
@@ -1195,10 +1196,10 @@ footer .copyright {
 
 	.logo-dc {
 		position: absolute;
-		top: -2.5vw;
-		left: -1vw;
-		width: 35vw;
-		height: 27vw;
+		top: -0.5vw;
+		left: 0;
+		width: 30vw;
+		height: 21vw;
 		z-index: 999;
 	}
 
@@ -1263,7 +1264,7 @@ footer .copyright {
 
 	.concept-box {
 		padding: 0 0 90px 0;
-		width: 65vw;
+		width: 80vw;
 		max-width: 500px;
 		height: 50vw;
 		max-height: 500px;
@@ -1272,14 +1273,14 @@ footer .copyright {
 
 	.concept-img {
 		width: 100%;
-		max-width: 450px;
+		max-width: 500px;
 		margin: 0 auto;
 		display: block;
 	}
 
 	.concept-text {
 		width: 73%;
-		max-width: 450px;
+		max-width: 540px;
 		float: none;
 		margin: 0 auto 0;
 		padding: 0;
@@ -1468,7 +1469,6 @@ footer .copyright {
 	.home-news-img1 {
 		display: block;
 		max-width: 500px;
-		/* width: 90%; */
 		margin: 0 auto;
 		height: 55vw;
 		margin-bottom: 10px;
@@ -1477,7 +1477,6 @@ footer .copyright {
 	.home-news-img2 {
 		display: block;
 		max-width: 500px;
-		/* width: 90%; */
 		margin: 0 auto;
 		height: 55vw;
 		margin-bottom: 10px;
@@ -1493,12 +1492,12 @@ footer .copyright {
 
 	.news-day {
 		font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-		font-size: min(1.6rem, 4.0vw);
+		font-size: min(1.8rem, 4.0vw);
 	}
 
 	.news-ibent {
 		font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-		font-size: min(1.6rem, 4.0vw);
+		font-size: min(1.8rem, 4.0vw);
 	}
 
 	.home-kiji-btn {
@@ -1736,6 +1735,10 @@ footer .copyright {
 		margin-left: -20px;
 	}
 
+	.main_visual-img {
+		object-fit: cover;
+	}
+
 	.logo-dc {
 		top: -4vw;
 		left: -1vw;
@@ -1745,6 +1748,10 @@ footer .copyright {
 
 	.scroll_btn span {
 		width: 11%;
+	}
+
+	.concept-box {
+		width: 85vw;
 	}
 
 	.content {

@@ -403,6 +403,7 @@ main {
 
 .news-day {
 	margin-left: 6px;
+	font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic'
 }
 
 
@@ -568,12 +569,11 @@ footer .copyright {
 
 	/*	ロゴ*/
 	.logo-dc {
-		top: -9.7vw;
-		left: -1vw;
-		width: 28vw;
-		height: 28vw;
+		top: 1.3vw;
+		left: 3vw;
+		width: 23vw;
+		height: 15vw;
 	}
-
 
 	/*ハンバーガーメニュー 他の下層ページ共通*/
 	#nav-toggle {
@@ -605,11 +605,6 @@ footer .copyright {
 
 	#top-head.fixed .logo,
 	#top-head .logo {
-		/*
-			position: absolute;
-			left: 13px;
-			top: 21px;
-*/
 		color: #333;
 		font-size: 26px;
 	}
@@ -944,7 +939,6 @@ footer .copyright {
 	.topBtn-outer {
 		position: relative;
 	}
-
 }
 
 

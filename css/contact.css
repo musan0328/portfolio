@@ -350,6 +350,7 @@ label[for] {
   display: block;
 }
 
+
 @media screen and (max-width: 680px) {
 
   .contact_form tr,
@@ -408,11 +409,6 @@ label[for] {
 
   #top-head.fixed .logo,
   #top-head .logo {
-    /*
-			position: absolute;
-			left: 13px;
-			top: 21px;
-*/
     color: #333;
     font-size: 26px;
   }
@@ -709,6 +705,7 @@ label[for] {
   font-size: 30px;
   border: none;
   text-align: center;
+  cursor: pointer;
 }
 
 .Form-Btn:hover {

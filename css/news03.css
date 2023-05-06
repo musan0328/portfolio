@@ -105,7 +105,6 @@ main {
 	font-family: "Comic Sans MS";
 }
 
-
 #top-head .inner {
 	position: relative;
 }
@@ -116,9 +115,6 @@ main {
 	color: #000000;
 	padding-left: 5vw;
 }
-
-
-
 
 /* Fixed */
 #top-head.fixed {
@@ -192,7 +188,6 @@ main {
 	position: absolute;
 	top: -4vw;
 }
-
 
 .main_visual {
 	background-color: #F2D6AA;
@@ -312,6 +307,7 @@ main {
 	font-size: 20px;
 	position: absolute;
 	right: 10px;
+	font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
 }
 
 .article-title {

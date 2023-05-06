@@ -270,9 +270,15 @@
 		<!--固定ボタン-->
 		<div class="topBtn-outer">
 			<div id="topBtn" class="topBtn" ontouchstart="">
-				<a href="../coading/news.html" class="topBtn-text" ontouchstart="">PAGE TOP</a>
+				<a href="../coading/menu.html" class="topBtn-text" ontouchstart="">PAGE TOP</a>
 			</div>
 		</div>
+		<!-- <div class="topBtn-outer">
+			<div id="topBtn" class="topBtn fuwafuwa" ontouchstart="">
+				<a href="../coading/news.html" class="topBtn-text" ontouchstart=""><img src="./images/logo/dacs_top.png"
+						alt="トップアイコン"></a>
+			</div>
+		</div> -->
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="../コーディング/jquery.inview.js"></script>
@@ -333,11 +339,7 @@
 
 		//カテゴリ・月別記事ボタン ボタンを押したときに表示する
 		//toggleメソッドで実装
-		//参考サイト https://crestadesign.org/jquery-accordion/
 		$(function () {
-			//			$('.categori-btn').on('click', function () {
-			//				$(this).next().slideToggle();
-			//			})
 			let btn = $('.categori-btn');
 			console.log(btn);
 			btn.on('click', function () {
@@ -350,14 +352,6 @@
 			});
 		});
 
-		//参考サイト https://kodocode.net/design-css-acordion/ 3  hide非表示 
-//		$(document).ready(function() {
-//			$('.sidebar-list').hide();
-//			
-//			$('.js-show').click(function() {
-//				var 
-//			})
-//		})
 	</script>
 </body>
 

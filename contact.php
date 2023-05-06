@@ -98,7 +98,7 @@ if(!empty($_POST['name']) && !empty($_POST['kana_name']) && !empty($_POST['mail'
 								<p class="Form-Item-Label">
 									ふりがな  <span class="Form-Item-Label-Required">必須</span>
 								</p> 
-								<input type="text" value="" name="kana_name" id="kana_name" class="Form-Item-Input-sei" placeholder="セイメイ">
+								<input type="text" value="" name="kana_name" id="kana_name" class="Form-Item-Input-sei" placeholder="せいめい">
 							</div>
 							<div class="Form-Item">
 								<p class="Form-Item-Label">メールアドレス  <span class="Form-Item-Label-Required">必須</span></p>
@@ -123,7 +123,7 @@ if(!empty($_POST['name']) && !empty($_POST['kana_name']) && !empty($_POST['mail'
 								<span class="checkbox_txt">個人情報保護方針に同意する</span>
 								<input type="checkbox" id="privacy_policy" name="privacy_policy[]" value="個人情報保護方針に同意する"></label>
 							</div>
-						 <input type="submit" class="Form-Btn" id="sbtn" name="submit" value="送信ボタン">
+						 	<input type="submit" class="Form-Btn" id="sbtn" name="submit" value="送信ボタン">
 						 </div>
 					</form>
 				</div>

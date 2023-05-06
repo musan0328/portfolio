@@ -286,6 +286,7 @@ main {
 	height: 30vw;
 	border-radius: 40px;
 	object-fit: cover;
+	margin-left: 0.2rem;
 }
 
 .news-img:hover {
@@ -402,6 +403,7 @@ main {
 
 .news-day {
 	margin-left: 6px;
+	font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic'
 }
 
 
