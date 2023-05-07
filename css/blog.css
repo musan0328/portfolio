@@ -56,6 +56,33 @@ a:hover {
 	text-decoration: underline;
 }
 
+/* news写真をホバーしたら肉球を表示する */
+.nikukyu {
+	position: relative;
+}
+
+.nikukyu:after {
+	content: "";
+	position: absolute;
+	top: 1em;
+	left: 0;
+	display: inline-block;
+	pointer-events: none;
+	width: 300px;
+	height: 300px;
+}
+
+.nikukyu:hover {
+	text-decoration: underline;
+	background: url(../images/logo/dog_nikukyuu.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+/* 肉球アイコンここまで */
+
+
 button {
 	display: none;
 }
