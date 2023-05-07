@@ -444,7 +444,6 @@ main {
 .dacs-image {
 	width: 30vw;
 	height: 25vw;
-	;
 }
 
 .pager {
@@ -460,7 +459,7 @@ a.btn--orange {
 	padding: 13px;
 	border-radius: 10px;
 	font-size: 1.1rem;
-	font-family: 'Comic Sans MS';
+	font-family: 'Itim', cursive;
 }
 
 a.btn--orange:hover {

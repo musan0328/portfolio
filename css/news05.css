@@ -253,10 +253,6 @@ main {
 	opacity: 0.8;
 }
 
-
-
-
-
 .btn-sp {
 	display: none;
 }
@@ -441,24 +437,12 @@ main {
 .dacs-image {
 	width: 30vw;
 	height: 25vw;
-	;
 }
 
 .pager {
 	margin: 40px 0 35px 0;
 	text-align: center;
 }
-
-
-/*
-.ichiran-btn {
-	width: 150px;
-}
-
-.ichiran-btn:hover {
-	opacity: 0.8;
-}
-*/
 
 /*ボタン*/
 a.btn--orange {
@@ -468,7 +452,7 @@ a.btn--orange {
 	padding: 13px;
 	border-radius: 10px;
 	font-size: 1.1rem;
-	font-family: 'Comic Sans MS';
+	font-family: 'Itim', cursive;
 }
 
 a.btn--orange:hover {
@@ -482,9 +466,6 @@ a.btn--shadow {
 	-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 	box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
-
-
-
 
 /*google mapエリア*/
 .google-map {
