@@ -121,7 +121,7 @@
 						</a>
 					</div>
 				</div>
-				<a href="../coading/dogs.html" class="dogs-link">
+				<a href="../coading/dogs.html">
 					<img class="dogs-link_image" ontouchstart="" src="../coading/images/index/dogs-page-link.png"
 						alt="Dogページはこちら!">
 				</a>
@@ -175,7 +175,7 @@
 			<div class="home-news">
 				<div class="news">
 					<div class="news-box">
-						<a href="../coading/news05.html">
+						<a href="../coading/news05.html" class="news_link">
 							<img class="home-news-img1" ontouchstart="" src="../coading/images/news/News05.jpg"
 								alt="ハロウィン">
 						</a>
@@ -185,7 +185,7 @@
 				</div>
 				<div class="news">
 					<div class="news-box">
-						<a href="../coading/news02.html">
+						<a href="../coading/news02.html" class="news_link">
 							<img class="home-news-img2" ontouchstart=""
 								src="../coading/images/index/rodion-kutsaev-ySNkCkdKyTY-unsplash.jpg" alt="クリスマス会">
 						</a>
@@ -195,7 +195,7 @@
 				</div>
 				<div class="news">
 					<div>
-						<a href="../coading/news03.html">
+						<a href="../coading/news03.html" class="news_link">
 							<img class="home-news-img3" ontouchstart=""
 								src="../coading/images/index/myriam-jessier-qT2h0TXM3oA-unsplash.jpg" alt="定期検診">
 						</a>
@@ -298,10 +298,8 @@
 			<small class="copyright">Copyright © 2022 Dear Dog Cafe. All Right Reserved</small>
 		</div>
 		<!--固定ボタン-->
-		<div class="topBtn-outer">
-			<div id="topBtn" class="topBtn" ontouchstart="">
-				<a href="../coading/index.html" class="topBtn-text" ontouchstart="">PAGE TOP</a>
-			</div>
+		<div id="topBtn" class="topBtn" ontouchstart="">
+			<img src="../coading/images/logo/pagetop.png" alt="PageTopボタン" class="topBtn-image">
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -347,45 +345,6 @@
 				});
 		});
 
-		// PCとSPの画像を切り替える
-		// 	$(function(){
-		// //	/* ここにjQueryのコードを書く */
-		// //	//メインビジュアルスライド
-		// 			var windowWidth = $(window).width();
-		// 			var width = windowWidth / 3;
-		// 			let test = $('.main-visual');
-		// 			let testSP = $('.main-visual-sp');
-		// 			console.log(windowWidth);
-		// 			console.log(testSP);
-		// 			if( windowWidth > 768 ){
-		// 				console.log('768より大きい');
-		// 				testSP.addClass('bgSP');
-		// 				$(document).ready(function(){
-		// 				test.bxSlider({
-		// 				mode: 'fade',
-		// 				auto: true,
-		// 				autoControls: true,
-		// 				stopAutoOnClick: true,
-		// 				pager: true,
-		// 				speed: 700,
-		// 			  });
-		// 			});
-		// 			//SP版メインビジュアル
-		// 			}else{
-		// 				console.log('768より小さい');
-		// 				test.addClass('bg');
-		// 				$(document).ready(function(){
-		// 				testSP.bxSlider({
-		// 				mode: 'fade',
-		// 				auto: true,
-		// 				autoControls: true,
-		// 				stopAutoOnClick: true,
-		// 				pager: true,
-		// 				speed: 700,
-		// 				});
-		// 			});
-		// 		}
-		// 	});
 
 		//スクロールボタン
 		$(function () {
@@ -398,6 +357,7 @@
 				return false;
 			});
 		});
+
 
 		//ナビゲーションメニュー
 		$(function () {
@@ -516,7 +476,6 @@
 				return false;
 			});
 		});
-
 	</script>
 </body>
 

@@ -560,27 +560,16 @@ main {
 	transition-duration: 1.0s;
 }
 
-/*ページトップボタン トップページ、下層ページ共通 605行目まで*/
 /*ページトップボタン*/
 .topBtn {
-	position: relative;
 	position: fixed;
-	/*固定*/
-	bottom: 20px;
-	/*場所を右下に移動*/
-	right: 20px;
-	/*場所を右下に移動*/
+	bottom: 2vw;
+	right: 0;
 	display: block;
-	/*aタグをblock要素に変更*/
-	background-color: #F6B37F;
+	z-index: 9999;
 	text-decoration: none;
-	font-weight: bold;
-	font-size: 11px;
-	width: 70px;
-	height: 70px;
-	text-align: center;
-	line-height: 18px;
-	border-radius: 50px;
+	width: 10vw;
+	height: 7rem;
 	padding: 0.5rem 1rem;
 	box-sizing: border-box;
 	-webkit-transition-property: opacity;
@@ -592,28 +581,12 @@ main {
 	text-decoration: none;
 }
 
-.topBtn:before {
-	content: '\02227';
-	position: absolute;
-	top: 42px;
-	left: 0;
-	width: 100%;
-	text-align: center;
-	font-size: 25px;
-	color: #FFFFFF;
-}
-
-.topBtn-text {
-	position: absolute;
-	bottom: 26px;
-	right: 5px;
-	text-align: center;
-	color: #FFFFFF;
-}
-
 .topBtn:hover {
 	opacity: 0.5;
 }
+
+/* ページトップボタン ここまで */
+
 
 @keyframes fuwafuwa {
 	0% {
@@ -667,6 +640,18 @@ footer .copyright {
 		margin-bottom: 8px;
 	}
 }
+
+/* ページトップボタン 830px以下 */
+@media screen and (max-width: 830px) {
+
+	.topBtn {
+		width: 15vw;
+		position: fixed;
+		bottom: -3vw;
+		right: 0;
+	}
+}
+
 
 @media screen and (max-width: 821px) {
 
@@ -1063,17 +1048,19 @@ footer .copyright {
 		margin: 0 auto;
 	}
 
-	/*	Topボタン*/
-	.topBtn-outer {
-		position: relative;
-	}
-
-	/* Topボタン Topページ、下層ページ共通 */
-	.topBtn {
-		width: 30vw;
-	}
-
 }
+
+@media screen and (max-width: 430px) {
+
+	.topBtn {
+		width: 25vw;
+		position: fixed;
+		bottom: -10vw;
+		right: -2vw;
+	}
+}
+
+
 
 @media screen and (max-width: 375px) {
 
@@ -1144,8 +1131,27 @@ footer .copyright {
 		font-size: 1.2rem;
 	}
 
-	/* Topページボタン Topページ、下層ページ共通 */
+	/* ページトップボタン 共通 375x以下 */
 	.topBtn {
-		width: 35vw;
+		width: 25vw;
+		position: fixed;
+		bottom: -11vw;
+		right: -2vw;
+	}
+
+}
+
+@media screen and (max-width: 280px) {
+
+	#nav-toggle {
+		right: 40px;
+	}
+
+	/* ページトップボタン 共通 280x以下 */
+	.topBtn {
+		width: 30vw;
+		position: fixed;
+		bottom: 9vw;
+		right: 5vw;
 	}
 }
