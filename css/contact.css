@@ -700,27 +700,35 @@ label[for] {
 }
 
 .Form-Btn {
-  border-radius: 20px;
+  display: block;
+  background-color: #e3364a;
+  box-shadow: 0 5px 0 #ca1c30;
+  border-radius: 60px;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  padding: 0.8em 3em;
   margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
-  padding: 10px 0;
   width: 280px;
-  display: block;
-  letter-spacing: 0.05em;
-  background: #F8B551;
-  color: #fff;
-  font-size: 30px;
-  border: none;
   text-align: center;
   cursor: pointer;
-  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.05rem;
+  font-weight: bold;
 }
 
 .Form-Btn:hover {
-  transition: 1.3s;
-  opacity: 0.8;
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.Form-Btn:active {
+  box-shadow: none;
+  transform: translateY(5px);
 }
 
 .Form-Item-Input-sei, .Form-Item-Input2 {
