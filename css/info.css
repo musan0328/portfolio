@@ -1,7 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* htmlの最大幅を指定 */
 html {
+	max-width: 1720px;
+	margin: 0 auto;
 	margin-top: -20px;
 }
 
@@ -71,7 +74,7 @@ a:hover {
 	color: #8B4513;
 	text-shadow: 1px 1px 3px #EEEEEE;
 	text-decoration: none;
-	font-family: "Comic Sans MS";
+	font-family: 'Itim', cursive;
 }
 
 #top-head .inner {
@@ -151,7 +154,6 @@ a:hover {
 
 /*ハンバーガーメニューここまで*/
 
-
 /*ロゴ*/
 .logo-dc {
 	width: 16vw;
@@ -170,7 +172,6 @@ a:hover {
 	float: left;
 	margin: 0 20px;
 	list-style: none;
-	/* font-family: "ＭＳ ゴシック",sans-serif; */
 	font-family: sans-serif;
 }
 
@@ -676,7 +677,6 @@ footer .copyright {
 		padding: 18px 0;
 	}
 
-
 	/* #nav-toggle 切り替えアニメーション */
 	.open #nav-toggle span:nth-child(1) {
 		top: 11px;
@@ -699,12 +699,10 @@ footer .copyright {
 
 	/* #global-nav スライドアニメーション */
 	.open #gloval-nav {
-		/* #global-nav top + #mobile-head height */
 		-moz-transform: translateY(556px);
 		-webkit-transform: translateY(556px);
 		transform: translateY(556px);
 	}
-
 
 	/*	ここまで(ハンバーガーメニューの実装)*/
 
@@ -730,7 +728,6 @@ footer .copyright {
 		width: 100%;
 		padding-bottom: 30px;
 	}
-
 
 	.info-title {
 		display: block;
@@ -820,8 +817,6 @@ footer .copyright {
 		width: 90%;
 	}
 
-	.q-title {}
-
 	.a-title {
 		vertical-align: text-bottom;
 	}
@@ -846,8 +841,6 @@ footer .copyright {
 }
 
 @media screen and (min-width: 376px) and (max-width: 540px) {
-
-	/*		画面サイズ540pxから376px指定*/
 	.yoru {
 		padding-left: 134px;
 	}
@@ -857,11 +850,6 @@ footer .copyright {
 	}
 }
 
-@media screen and (min-width: 376px) and (max-width: 493px) {
-	.access-area th {
-		/*		padding-right: 10px;*/
-	}
-}
 
 @media screen and (max-width: 375px) {
 
@@ -879,7 +867,7 @@ footer .copyright {
 	}
 
 	.price {
-		max-width: 267px;
+		max-width: 275px;
 		width: 100%;
 		margin: 0 auto;
 	}
@@ -1000,8 +988,6 @@ footer .copyright {
 		padding: 0 0 30px 0;
 	}
 
-
-	/*	Topボタン*/
 	.topBtn-outer {
 		position: relative;
 	}

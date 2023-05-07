@@ -30,6 +30,9 @@ if(!empty($_POST['name']) && !empty($_POST['kana_name']) && !empty($_POST['mail'
 <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"> 
 <!--metaタグ SEO対策-->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="format-detection" content="email=no,telephone=no,address=no">

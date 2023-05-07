@@ -1,6 +1,13 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* htmlの最大幅を指定 */
+html {
+	max-width: 1720px;
+	margin: 0 auto;
+	margin-top: -20px;
+}
+
 body {
 	/*	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;*/
 	padding: 0;
@@ -143,7 +150,7 @@ ul {
 	color: #8B4513;
 	text-shadow: 1px 1px 3px #EEEEEE;
 	text-decoration: none;
-	font-family: "Comic Sans MS";
+	font-family: 'Itim', cursive;
 }
 
 #top-head .inner {

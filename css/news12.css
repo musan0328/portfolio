@@ -1,5 +1,12 @@
 @charset "UTF-8";
+
 /* CSS Document */
+/* htmlの最大幅を指定 */
+html {
+	max-width: 1720px;
+	margin: 0 auto;
+	margin-top: -20px;
+}
 
 body {
 	/*	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;*/
@@ -102,7 +109,7 @@ main {
 	color: #8B4513;
 	text-shadow: 1px 1px 3px #EEEEEE;
 	text-decoration: none;
-	font-family: "Comic Sans MS";
+	font-family: 'Itim', cursive;
 }
 
 
@@ -363,6 +370,7 @@ main {
 	vertical-align: top;
 	margin-bottom: 20px;
 	letter-spacing: 3px;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .sidebar-list dd li a:hover {
@@ -394,6 +402,7 @@ main {
 	color: #000000;
 	margin-top: 14px;
 	letter-spacing: 1px;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .sidebar-list2 dd li a:hover {
@@ -434,6 +443,7 @@ main {
 	height: 37vw;
 	border-radius: 50px;
 	margin: 0 0 30px 10px;
+	object-fit: cover;
 }
 
 .dacs-image {
@@ -450,17 +460,6 @@ main {
 .cau-text {
 	color: #FF9900;
 }
-
-
-/*
-.ichiran-btn {
-	width: 150px;
-}
-
-.ichiran-btn:hover {
-	opacity: 0.8;
-}
-*/
 
 /*ボタン*/
 a.btn--orange {
@@ -485,9 +484,6 @@ a.btn--shadow {
 	box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
 
-
-
-
 /*google mapエリア*/
 .google-map {
 	height: 0;
@@ -503,8 +499,6 @@ a.btn--shadow {
 	height: 100%;
 	width: 100%;
 }
-
-
 
 /*footerエリア*/
 footer {
@@ -560,22 +554,14 @@ footer .copyright {
 		background: rgba(255, 255, 255, 0.2);
 		width: 100%;
 		height: 22vw;
-		/* z-index: 999; */
 		position: relative;
 	}
 
 	#top-head.fixed .logo,
 	#top-head .logo {
-		/*
-			position: absolute;
-			left: 13px;
-			top: 21px;
-*/
 		color: #333;
 		font-size: 26px;
 	}
-
-
 
 	#gloval-nav {
 		position: absolute;
@@ -589,7 +575,6 @@ footer .copyright {
 		-moz-transition: .5s ease-in-out;
 		transition: .5s ease-in-out;
 	}
-
 
 	#gloval-nav ul {
 		width: 100%;
@@ -605,7 +590,6 @@ footer .copyright {
 		position: static;
 	}
 
-
 	#top-head #gloval-nav ul li a,
 	#top-head.fixed #gloval-nav ul li a {
 		color: #8B4513;
@@ -615,7 +599,6 @@ footer .copyright {
 		display: block;
 		padding: 18px 0;
 	}
-
 
 	/* #nav-toggle 切り替えアニメーション */
 	.open #nav-toggle span:nth-child(1) {
@@ -636,8 +619,6 @@ footer .copyright {
 		-moz-transform: rotate(-315deg);
 		transform: rotate(-315deg);
 	}
-
-
 
 	/* #global-nav スライドアニメーション */
 	.open #gloval-nav {

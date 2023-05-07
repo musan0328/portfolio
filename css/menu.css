@@ -2,7 +2,10 @@
 
 /* CSS Document */
 /*ページの余白を0に設定する*/
+/* htmlの最大幅を指定 */
 html {
+	max-width: 1720px;
+	margin: 0 auto;
 	margin-top: -20px;
 }
 
@@ -89,7 +92,7 @@ a:hover {
 	color: #8B4513;
 	text-shadow: 1px 1px 3px #EEEEEE;
 	text-decoration: none;
-	font-family: "Comic Sans MS";
+	font-family: 'Itim', cursive;
 }
 
 #top-head .inner {
@@ -156,7 +159,6 @@ a:hover {
 	-moz-transition: .35s ease-in-out;
 	transition: .35s ease-in-out;
 }
-
 
 #nav-toggle span:nth-child(1) {
 	top: 0;
@@ -332,7 +334,7 @@ a:hover {
 	width: 95%;
 	max-width: 400px;
 	text-align: center;
-	font-family: YuGothic, 'Yu Gothic', sans-serif;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 	font-size: 1.0rem;
 	color: #3c3c3c;
 }
@@ -342,7 +344,7 @@ a:hover {
 	max-width: 400px;
 	text-align: center;
 	margin-left: auto;
-	font-family: YuGothic, 'Yu Gothic', sans-serif;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 	font-size: 1.0rem;
 	color: #3c3c3c;
 }
@@ -370,7 +372,7 @@ a:hover {
 
 .sub-drink_menu p {
 	text-align: center;
-	font-family: YuGothic, 'Yu Gothic', sans-serif;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 	font-size: 1.0rem;
 	color: #3c3c3c;
 }
@@ -505,10 +507,7 @@ a:hover {
 	max-width: 615px;
 	width: 80%;
 	margin: 0 auto;
-}
-
-.food-text {
-	font-family: 'Kosugi Maru', sans-serif;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .main-food_flex {
@@ -529,7 +528,7 @@ a:hover {
 	width: 95%;
 	max-width: 400px;
 	text-align: center;
-	font-family: YuGothic, 'Yu Gothic', sans-serif;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 	font-size: 1.0rem;
 	color: #3c3c3c;
 }
@@ -539,7 +538,7 @@ a:hover {
 	max-width: 400px;
 	text-align: center;
 	margin-left: auto;
-	font-family: YuGothic, 'Yu Gothic', sans-serif;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 	font-size: 1.0rem;
 	color: #3c3c3c;
 }
@@ -598,7 +597,7 @@ a:hover {
 
 .sub-food_menu p {
 	text-align: center;
-	font-family: YuGothic, 'Yu Gothic', sans-serif;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 	font-size: 1.0rem;
 	color: #3c3c3c;
 }

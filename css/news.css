@@ -1,7 +1,10 @@
 @charset "UTF-8";
-/* CSS Document */
 
+/* CSS Document */
+/* htmlの最大幅を指定 */
 html {
+	max-width: 1720px;
+	margin: 0 auto;
 	margin-top: -20px;
 }
 
@@ -98,7 +101,7 @@ main {
 	color: #8B4513;
 	text-shadow: 1px 1px 3px #EEEEEE;
 	text-decoration: none;
-	font-family: "Comic Sans MS";
+	font-family: 'Itim', cursive;
 }
 
 #top-head .inner {
@@ -292,9 +295,10 @@ main {
 	text-align: left;
 	border-bottom: 2px solid #FFCC99;
 	max-width: 145px;
-	width: 80%;
+	width: 90%;
 	font-size: 1.0rem;
 	margin-bottom: 8px;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .news-text2 {
@@ -304,6 +308,7 @@ main {
 	width: 80%;
 	font-size: 1.0rem;
 	margin-bottom: 8px;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .news-text3 {
@@ -313,6 +318,7 @@ main {
 	width: 100%;
 	font-size: 1.0rem;
 	margin-bottom: 8px;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .news-text4 {
@@ -322,6 +328,7 @@ main {
 	width: 100%;
 	font-size: 1.0rem;
 	margin-bottom: 8px;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .news-text5 {
@@ -331,6 +338,7 @@ main {
 	width: 100%;
 	font-size: 1.0rem;
 	margin-bottom: 8px;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .news-text6 {
@@ -340,6 +348,7 @@ main {
 	width: 100%;
 	font-size: 1.0rem;
 	margin-bottom: 8px;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .news-text7 {
@@ -349,6 +358,7 @@ main {
 	width: 100%;
 	font-size: 1.0rem;
 	margin-bottom: 8px;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .news-text8 {
@@ -358,6 +368,7 @@ main {
 	width: 100%;
 	font-size: 1.0rem;
 	margin-bottom: 8px;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .news-text9 {
@@ -367,6 +378,7 @@ main {
 	width: 100%;
 	font-size: 1.0rem;
 	margin-bottom: 8px;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .news-category1 {
@@ -428,6 +440,7 @@ main {
 	vertical-align: top;
 	margin-bottom: 20px;
 	letter-spacing: 3px;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .sidebar-list dd li a:hover {
@@ -462,6 +475,7 @@ main {
 	color: #000000;
 	margin-top: 14px;
 	letter-spacing: 1px;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .sidebar-list2 dd li a:hover {
@@ -530,29 +544,58 @@ main {
 }
 
 /*ページトップボタン トップページ、下層ページ共通 605行目まで*/
+/*ページトップボタン*/
 .topBtn {
 	position: relative;
 	position: fixed;
-	bottom: 0;
-	right: -17px;
-	width: 15vw;
-	z-index: 3;
+	/*固定*/
+	bottom: 20px;
+	/*場所を右下に移動*/
+	right: 20px;
+	/*場所を右下に移動*/
+	display: block;
+	/*aタグをblock要素に変更*/
+	background-color: #F6B37F;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 11px;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	line-height: 18px;
+	border-radius: 50px;
+	padding: 0.5rem 1rem;
+	box-sizing: border-box;
+	-webkit-transition-property: opacity;
+	transition-duration: .5s;
+	-webkit-transition-duration: .5s;
 }
 
 .topBtn a {
 	text-decoration: none;
 }
 
-.topBtn:hover {
-	opacity: 0.5;
+.topBtn:before {
+	content: '\02227';
+	position: absolute;
+	top: 42px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	color: #FFFFFF;
 }
 
-.fuwafuwa {
-	animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
-	background: url(../img/ico-apple.svg) no-repeat center center / 60px auto;
-	display: inline-block;
-	transition: 1.5s ease-in-out;
-	margin-top: 15px;
+.topBtn-text {
+	position: absolute;
+	bottom: 26px;
+	right: 5px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.topBtn:hover {
+	opacity: 0.5;
 }
 
 @keyframes fuwafuwa {
@@ -767,7 +810,7 @@ footer .copyright {
 
 	.news-text {
 		border-bottom: 5px solid #FFCC99;
-		max-width: 300px;
+		max-width: 290px;
 		margin: 0 auto;
 		width: 80%;
 		font-size: 1.8rem;
@@ -805,7 +848,7 @@ footer .copyright {
 
 	.news-text3 {
 		border-bottom: 5px solid #FFCC99;
-		max-width: 330px;
+		max-width: 340px;
 		margin: 0 auto;
 		width: 100%;
 		font-size: 1.8rem;
@@ -845,7 +888,7 @@ footer .copyright {
 
 	.news-text7 {
 		border-bottom: 5px solid #FFCC99;
-		max-width: 235px;
+		max-width: 222px;
 		margin: 0 auto;
 		width: 100%;
 		font-size: 1.8rem;
@@ -1032,10 +1075,12 @@ footer .copyright {
 
 	.news-text {
 		font-size: 1.3rem;
+		width: 58%;
 	}
 
-	.news-text2, .news-text4, .news-text9 {
+	.news-text2 {
 		font-size: 1.3rem;
+		width: 60%;
 	}
 
 	.news-text3 {
@@ -1043,14 +1088,19 @@ footer .copyright {
 		max-width: 240px;
 	}
 
+	.news-text4 {
+		font-size: 1.2rem;
+		width: 48%;
+	}
+
 	.news-text5 {
 		font-size: 1.3rem;
-		max-width: 225px;
+		width: 63%;
 	}
 
 	.news-text6 {
 		font-size: 1.3rem;
-		max-width: 225px;
+		width: 60%;
 	}
 
 	.news-text7 {
@@ -1060,7 +1110,12 @@ footer .copyright {
 
 	.news-text8 {
 		font-size: 1.2rem;
-		max-width: 235px;
+		width: 64%;
+	}
+
+	.news-text9 {
+		font-size: 1.2rem;
+		width: 51%;
 	}
 
 	.news-category1, .news-category2 {

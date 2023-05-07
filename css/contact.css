@@ -1,7 +1,10 @@
 @charset "UTF-8";
-/* CSS Document */
 
+/* CSS Document */
+/* htmlの最大幅を指定 */
 html {
+  max-width: 1720px;
+  margin: 0 auto;
   margin-top: -20px;
 }
 
@@ -89,7 +92,7 @@ a:hover {
   color: #8B4513;
   text-shadow: 1px 1px 3px #EEEEEE;
   text-decoration: none;
-  font-family: "Comic Sans MS";
+  font-family: 'Itim', cursive;
 }
 
 #top-head .inner {
@@ -281,6 +284,7 @@ input[type="checkbox"] {
 .checkbox_txt {
   vertical-align: top;
   font-size: 1.0rem;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .Form-Item-LabelP {
@@ -289,6 +293,7 @@ input[type="checkbox"] {
   letter-spacing: 0.05em;
   font-weight: bold;
   font-size: 18px;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .irast {
@@ -533,6 +538,7 @@ label[for] {
   letter-spacing: 0.05em;
   font-weight: bold;
   font-size: 18px;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 @media screen and (max-width: 480px) {
@@ -605,6 +611,7 @@ label[for] {
   max-width: 410px;
   background: #eaedf2;
   font-size: 15px;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 
@@ -636,6 +643,7 @@ label[for] {
   max-width: 410px;
   background: #eaedf2;
   font-size: 12px;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .Form-Item-Input3 {
@@ -651,6 +659,7 @@ label[for] {
   background: #eaedf2;
   font-size: 14px;
   resize: none;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 @media screen and (max-width: 480px) {
@@ -706,6 +715,7 @@ label[for] {
   border: none;
   text-align: center;
   cursor: pointer;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .Form-Btn:hover {

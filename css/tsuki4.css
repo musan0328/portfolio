@@ -1,7 +1,10 @@
 @charset "UTF-8";
-/* CSS Document */
 
+/* CSS Document */
+/* htmlの最大幅を指定 */
 html {
+	max-width: 1720px;
+	margin: 0 auto;
 	margin-top: -20px;
 }
 
@@ -80,7 +83,7 @@ main {
 	z-index: 1;
 	max-width: 880px;
 	margin: 0 auto;
-	jeustify-content: space-between;
+	/* justify-content: space-between; */
 }
 
 
@@ -99,7 +102,7 @@ main {
 	color: #8B4513;
 	text-shadow: 1px 1px 3px #EEEEEE;
 	text-decoration: none;
-	font-family: "Comic Sans MS";
+	font-family: 'Itim', cursive;
 }
 
 #top-head .inner {
@@ -436,6 +439,7 @@ main {
 	vertical-align: top;
 	margin-bottom: 20px;
 	letter-spacing: 3px;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .sidebar-list dd li a:hover {
@@ -469,6 +473,7 @@ main {
 	color: #000000;
 	margin-top: 14px;
 	letter-spacing: 1px;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .sidebar-list2 dd li a:hover {

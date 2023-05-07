@@ -1,5 +1,12 @@
 @charset "UTF-8";
+
 /* CSS Document */
+/* htmlの最大幅を指定 */
+html {
+	max-width: 1720px;
+	margin: 0 auto;
+	margin-top: -20px;
+}
 
 /*ページの余白を0に設定する*/
 body {
