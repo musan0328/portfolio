@@ -608,11 +608,6 @@ footer .copyright {
 
 	#top-head.fixed .logo,
 	#top-head .logo {
-		/*
-			position: absolute;
-			left: 13px;
-			top: 21px;
-*/
 		color: #333;
 		font-size: 26px;
 	}
