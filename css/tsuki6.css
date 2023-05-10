@@ -947,13 +947,16 @@ footer .copyright {
 	}
 }
 
-
 @media screen and (max-width: 375px) {
 
 	/* ナビゲーションメニュー */
 	#mobile-head {
 		height: 33vw;
 		position: relative;
+	}
+
+	#top-head #gloval-nav ul li a, #top-head.fixed #gloval-nav ul li a {
+		font-family: "Comic Sans MS";
 	}
 
 	.logo-dc {

@@ -1043,6 +1043,9 @@ footer .copyright {
 		height: 23vw;
 	}
 
+	#top-head #gloval-nav ul li a, #top-head.fixed #gloval-nav ul li a {
+		font-family: "Comic Sans MS";
+	}
 
 	.menu-text p {
 		font-size: 1.1rem;

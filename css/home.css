@@ -1734,6 +1734,10 @@ footer .copyright {
 		z-index: 20000;
 	}
 
+	#top-head #gloval-nav ul li a, #top-head.fixed #gloval-nav ul li a {
+		font-family: "Comic Sans MS";
+	}
+
 	.loading img {
 		width: 200px;
 		height: 200px;
