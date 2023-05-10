@@ -834,3 +834,11 @@ footer .copyright {
     width: 240px;
   }
 }
+
+/* スマホ横向き */
+@media (orientation: landscape) {
+
+  #top-head #gloval-nav ul li a, #top-head.fixed #gloval-nav ul li a {
+    padding: 14px;
+  }
+}

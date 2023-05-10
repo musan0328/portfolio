@@ -391,9 +391,9 @@ main {
 	width: 80px;
 	border-radius: 10px;
 	letter-spacing: 2px;
+	padding: 0.4rem;
 	margin-top: 10px;
-	padding: 5px;
-	font-family: 'Itim', cursive;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .news-category2 {
@@ -404,8 +404,9 @@ main {
 	border-radius: 10px;
 	letter-spacing: 2px;
 	margin-top: 10px;
+	padding: 0.4rem;
 	padding: 5px;
-	font-family: 'Itim', cursive;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .news-day {
@@ -659,9 +660,6 @@ footer .copyright {
 		padding: 18px 0;
 	}
 
-
-
-
 	/* #nav-toggle 切り替えアニメーション */
 	.open #nav-toggle span:nth-child(1) {
 		top: 11px;
@@ -742,6 +740,7 @@ footer .copyright {
 		letter-spacing: 5px;
 		padding: 8px;
 		font-size: 1.5rem;
+		font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 	}
 
 	.news-category2 {
@@ -754,6 +753,7 @@ footer .copyright {
 		margin-top: 10px;
 		padding: 9px;
 		font-size: 1.3rem;
+		font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 	}
 
 	.news-text2 {
@@ -979,5 +979,13 @@ footer .copyright {
 
 	.sidebar-area {
 		padding: 0;
+	}
+}
+
+/* スマホ横向き */
+@media (orientation: landscape) {
+
+	#top-head #gloval-nav ul li a, #top-head.fixed #gloval-nav ul li a {
+		padding: 14px;
 	}
 }

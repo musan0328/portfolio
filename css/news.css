@@ -405,9 +405,9 @@ main {
 	width: 80px;
 	border-radius: 10px;
 	letter-spacing: 2px;
+	padding: 0.4rem;
 	margin-top: 10px;
-	padding: 5px;
-	font-family: 'Itim', cursive;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .news-category2 {
@@ -418,8 +418,9 @@ main {
 	border-radius: 10px;
 	letter-spacing: 2px;
 	margin-top: 10px;
+	padding: 0.4rem;
 	padding: 5px;
-	font-family: 'Itim', cursive;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .news-day {
@@ -828,7 +829,7 @@ footer .copyright {
 		letter-spacing: 5px;
 		padding: 8px;
 		font-size: 1.7rem;
-		font-family: 'Itim', cursive;
+		font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 	}
 
 	.news-category2 {
@@ -841,7 +842,7 @@ footer .copyright {
 		margin-top: 10px;
 		padding: 8px;
 		font-size: 1.7rem;
-		font-family: 'Itim', cursive;
+		font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 	}
 
 	.news-text2 {
@@ -1129,10 +1130,19 @@ footer .copyright {
 	.news-category1, .news-category2 {
 		padding: 10px;
 		font-size: 1.2rem;
+		font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 	}
 
 	.news-day {
 		font-size: 1.2rem;
+	}
+
+	.nikukyu:hover {
+		text-decoration: underline;
+		background: url(../images/logo/dog_nikukyuu.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: left;
 	}
 
 	/* ページトップボタン 共通 375x以下 */
@@ -1157,5 +1167,13 @@ footer .copyright {
 		position: fixed;
 		bottom: 9vw;
 		right: 5vw;
+	}
+}
+
+/* スマホ横向き */
+@media (orientation: landscape) {
+
+	#top-head #gloval-nav ul li a, #top-head.fixed #gloval-nav ul li a {
+		padding: 14px;
 	}
 }

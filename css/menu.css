@@ -1092,5 +1092,12 @@ footer .copyright {
 		bottom: -11vw;
 		right: -2vw;
 	}
+}
 
+/* スマホ横向き */
+@media (orientation: landscape) {
+
+	#top-head #gloval-nav ul li a, #top-head.fixed #gloval-nav ul li a {
+		padding: 14px;
+	}
 }

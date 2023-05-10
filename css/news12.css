@@ -214,18 +214,14 @@ main {
 	float: left;
 	margin: 0 20px;
 	list-style: none;
-	/* font-family: "ＭＳ ゴシック",sans-serif; */
 	font-family: sans-serif;
 }
 
 .gloval-nav li a {
 	color: #ffffff;
 	text-shadow: -1px -2px 3px #808080;
-	/* color: #FFCC99; */
 	font-size: 1.6rem;
 }
-
-
 
 .gloval-nav2 {
 	position: absolute;
@@ -234,19 +230,16 @@ main {
 	z-index: 2;
 }
 
-
 .gloval-nav2 li {
 	float: left;
 	margin: 0 20px;
 	list-style: none;
-	/* font-family: "ＭＳ ゴシック",sans-serif; */
 	font-family: sans-serif;
 }
 
 .gloval-nav2 li a {
 	color: #ffffff;
 	text-shadow: -1px -2px 3px #808080;
-	/* color: #FFCC99; */
 	font-size: 1.6rem;
 	text-decoration: none;
 }
@@ -321,6 +314,7 @@ main {
 	display: inline-block;
 	font-size: 20px;
 	padding: 18px 0 18px 17px;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .article-text {
@@ -709,5 +703,13 @@ footer .copyright {
 	.dog-image {
 		width: 60vw;
 		height: 45vw;
+	}
+}
+
+/* スマホ横向き */
+@media (orientation: landscape) {
+
+	#top-head #gloval-nav ul li a, #top-head.fixed #gloval-nav ul li a {
+		padding: 14px;
 	}
 }

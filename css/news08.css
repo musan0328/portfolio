@@ -318,6 +318,7 @@ main {
 	display: inline-block;
 	font-size: 20px;
 	padding: 18px 0 18px 17px;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 .article-text {
@@ -625,8 +626,6 @@ footer .copyright {
 		transform: rotate(-315deg);
 	}
 
-
-
 	/* #global-nav スライドアニメーション */
 	.open #gloval-nav {
 		/* #global-nav top + #mobile-head height */
@@ -716,10 +715,19 @@ footer .copyright {
 		width: 94vw;
 		height: 90vw;
 		margin: 0;
+		object-fit: cover;
 	}
 
 	.dog-image {
 		width: 60vw;
 		height: 45vw;
+	}
+}
+
+/* スマホ横向き */
+@media (orientation: landscape) {
+
+	#top-head #gloval-nav ul li a, #top-head.fixed #gloval-nav ul li a {
+		padding: 14px;
 	}
 }
