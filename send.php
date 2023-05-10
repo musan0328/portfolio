@@ -1,7 +1,4 @@
 <?php
-    mb_language("japanese");
-    mb_internal_encoding("utf-8");
-
     //XSS対策
     //htmlspecialchars → JavaScriptのスクリプトタグを別の文字列に変換して、サニタイズする関数
     $name = htmlspecialchars($_POST['name'], ENT_QUOTES);
@@ -19,16 +16,6 @@
 
     //指定したメールアドレスにメールが届く
     mail('ayatsujisan2@gmail.com', 'お問い合わせ', $mailText);
-
-    // 文字コードをUTF-8に変換
-    $name = mb_encode_mimeheader($name);
-    $kana_name 	= mb_encode_mimeheader($kana_name);
-    $mail = mb_encode_mimeheader($mail);
-    $tell = mb_encode_mimeheader($tell);
-    $inquiry = mb_encode_mimeheader($inquiry);
-    
-    // PHPの文字コードをUTF-8に指定
-    mb_internal_encoding("utf-8");
 ?>
 
 <!DOCTYPE html>
@@ -44,9 +31,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"> 
     <!--metaタグ SEO対策-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="email=no,telephone=no,address=no">
@@ -92,8 +76,7 @@
     <h2>メール送信完了</h2>    
     <p class="message">
     お問い合わせありがとうございます。1営業日以内にご返信させていただきます。<br>
-    自動返信メールをお送りしておりますのでご確認ください。<br>
-    1時間たっても届かない場合はお手数ですがこちらからご連絡ください。
+    自動返信メールをお送りしておりますのでご確認ください。
     </p>
     <footer>
             <img src="../coading/images/logo/Instagram.png" alt="インスタロゴ" class="logo" width="50px" height="50px">
@@ -105,16 +88,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script>
 		
-        //ナビゲーションメニュー
+            //ナビゲーションメニュー
         $(function(){
-            //表示するスクロール量（px）
-            var scrollPoint = 60;
-            $(window).scroll(function(){
-                if($(this).scrollTop() > scrollPoint){
-                    $('#top-head').fadeIn();
-                }
-            });
+        //表示するスクロール量（px）
+        var scrollPoint = 60;
+        $(window).scroll(function(){
+            if($(this).scrollTop() > scrollPoint){
+                $('#top-head').fadeIn();
+            }
         });
+    });
 
             //ハンバーガーメニュー
             $(function() {

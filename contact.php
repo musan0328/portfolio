@@ -218,7 +218,8 @@ if(!empty($_POST['name']) && !empty($_POST['kana_name']) && !empty($_POST['mail'
 					required: '必須項目です。入力をお願いします。'
 				},
 				kana_name: {
-					required: '必須項目です。入力をお願いします。'
+					required: '必須項目です。入力をお願いします。',
+					regex: /^[\u3040-\u309F|\s]+$/,
 				},
 				mail: {
 					required: '必須項目です。入力をお願いします。',
